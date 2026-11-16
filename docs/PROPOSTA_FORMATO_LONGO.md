@@ -77,3 +77,39 @@ Meta de esforço: um longo custar no máximo 3–4 vezes um curto.
 - **Continuar:** retenção ≥ 35 %, 1 vídeo acima de 20 mil views e esforço ≤ 4× o curto.
 - **Mudar** (primeiro a voz, depois a duração): retenção abaixo de 30 % ou nenhum vídeo acima de 5 mil views.
 - **Pausar:** esforço acima de 6× o curto, ou o curto perdendo mais de 40 % das views por falta de tempo.
+
+## Rodada 2 (16/11/2026): voz, frequência e satélite
+
+### Voz
+- **Não clonar o Henry nem o Nathan no Fish Audio.**
+  - As vozes do ElevenLabs com esse nome parecem ser da Voice Library, que são vozes de pessoas reais. A ficha da voz no app mostra o autor.
+  - Os termos do Fish Audio proíbem usar a voz de outra pessoa sem autorização.
+  - Os termos do ElevenLabs proíbem usar a saída do serviço para criar modelos concorrentes.
+  - Se der problema, o canal perde a voz que é a identidade dele.
+- **Caminhos para ganhar emoção:**
+  1. Eleven v3 com audio tags (`[empolgado]`, `[pausa]`), na mesma voz Henry.
+  2. Fish Audio com a voz do dono do canal ou de um locutor contratado, com cessão de direitos por escrito.
+  3. Voice Design (uma voz nova, sem pessoa real por trás).
+- **Controle de qualidade automático, em todo vídeo:**
+  - gerar 2–3 versões por frase;
+  - Whisper compara o que foi falado com o roteiro, e qualquer palavra errada reprova a frase;
+  - medir pausas, velocidade, tom monótono ou final subindo, e nível;
+  - escolher sozinho a melhor versão de cada frase;
+  - só as frases reprovadas em todas as versões vão para escuta.
+
+### Frequência
+- Mix de cerca de **50 % notícia quente e 50 % perene**. Assunto em alta sem notícia só entra se houver um mecanismo que o mapa explique.
+- **Semanas 1–4:** 1 perene de 10–12 min + 1 quente de 6–8 min, publicado em até 36 h.
+- **Semanas 5–8:** 2 por semana fixos, medindo as horas gastas.
+- **Semanas 9–12:** 3 por semana (2 quentes + 1 perene), se a retenção ficar em pelo menos 35 %, o quente custar até 2× um curto e o curto não cair.
+- **1 por dia, agora, não:** o risco estimado na regra de conteúdo genérico do YouTube sobe de menos de 10 % (2 por semana) para 25–40 % (1 por dia).
+
+### Satélite (em aberto: A/B na prancha)
+- **Licença:**
+  - Sentinel-2 cloudless **2016** (EOX) é CC BY 4.0: pode usar comercialmente, com crédito na descrição.
+  - Os mosaicos de 2018–2021 são NC (não comerciais).
+  - Os de 2023 em diante precisam de licença paga.
+- **Risco de "reused content" no YouTube:** baixo, porque há animação, roteiro e narração próprios.
+- **Assistente:** satélite como base em 16:9, com tratamento de cor próprio. As camadas simples (contornos, setas, etiquetas) vão por cima.
+- **Agente:** base autoral (marca visual que liga TikTok e YouTube, mais legível em 10 min) e satélite só como "prova" em 1–3 momentos, com imagem Copernicus da data do evento. O mosaico de 2016 é velho e não mostra o evento.
+- **Próximo passo:** prancha 16:9 com o mesmo plano em três versões (autoral, satélite com tratamento, satélite cru) para o dono escolher.
