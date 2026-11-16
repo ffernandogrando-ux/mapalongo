@@ -1,0 +1,34 @@
+# Mapa Longo: canal de vídeos longos de geografia e clima (YouTube, pt-BR, 16:9)
+
+Canal irmão do Mapas, o canal de curtos do TikTok. O repositório `mapas` **não é alterado** por este projeto: o motor dele é usado numa versão fixa.
+Antes de qualquer roteiro, leia `docs/PROPOSTA_FORMATO_LONGO.md`. Responda ao usuário em português.
+
+## Decisões tomadas (16/11/2026)
+- **Formato:** 16:9, de 8 a 12 min, dividido em capítulos. A estrutura dos blocos está na proposta.
+- **Cadência:**
+  - mês 1: 2 vídeos por semana (1 perene + 1 quente publicado em até 36 h);
+  - mês 3: até 3 vídeos por semana, se as metas forem batidas;
+  - 1 vídeo por dia não entra agora.
+- **Pauta:** cerca de 50 % notícia quente e 50 % assunto que volta todo ano. Sempre com um mecanismo que o mapa explica.
+- **Mapa:**
+  - a **base é a textura autoral** (a mesma marca do TikTok, simplificada para 16:9);
+  - o **satélite entra como "prova"** em 1 a 3 momentos por vídeo, de preferência com imagem Copernicus da data do evento;
+  - o mosaico Sentinel-2 cloudless **2016** (EOX, CC BY 4.0) é a única versão da EOX liberada; as de 2018 em diante não podem ser usadas;
+  - créditos só na descrição, nunca na tela.
+- **Câmera calma:**
+  - plano novo a cada 8–15 s e algo novo na tela a cada 4–6 s;
+  - deriva lenta e contínua, sem nunca parar;
+  - o mergulho girando só nas viradas de bloco;
+  - 3D com horizonte em 2–3 momentos por vídeo.
+  - As regras fixas de câmera do curto não valem aqui.
+- **Produção por blocos:** usar planos parametrizados (mapa-lousa, viagem, caminho, gráfico, comparador, ficha de dado, foto, lista). O código à mão fica só para o mecanismo principal.
+- **Voz:**
+  - sempre a mesma voz;
+  - nunca clonar a voz de uma pessoa real sem autorização por escrito;
+  - controle de qualidade automático em toda narração: Whisper × roteiro, pausas, velocidade, tom e nível, com 2 a 3 versões por frase.
+- **Antes do render final:** mandar a prancha (um quadro por plano, com o tempo e a frase) e um trecho em vídeo, e esperar o ok.
+- **Herdado do curto:**
+  - dados conferidos na web;
+  - sem música;
+  - créditos na descrição;
+  - arquivo de imagens de IA (`roteiros/<video>_imagens.txt`).
