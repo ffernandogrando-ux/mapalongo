@@ -153,6 +153,7 @@ def todas_placas():
     P["rs_c"] = placa("rs_c", CAM["rs"], [br0, cheia(RS, 22)])
     P["poa"] = placa("poa", CAM["poa"], [], paleta="relevo", divisas=False)
     P["energia"] = placa("energia", CAM["energia"], [br0])
+    P["energia_r"] = placa("energia_r", CAM["energia"], [br0, dict(g=E_("São Paulo", "Minas Gerais", "Goiás", "Paraná", "Mato Grosso do Sul", "Distrito Federal"), lift=18, tema="cheia", divisas=True)])
     P["agro"] = placa("agro", CAM["agro"], [br0])
     P["asia"] = placa("asia", CAM["asia"], [], divisas=False)
     P["mundo"] = placa("mundo", CAM["mundo"], [], divisas=False, escala=1.15)
@@ -186,11 +187,12 @@ def grafico(t_draw, marcas):
     py = lambda y: Y1 - (y - vmin) / (vmax - vmin) * (Y1 - Y0)
     fundo = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(fundo)
     cartao(d, [X0 - 120, Y0 - 140, X1 + 90, Y1 + 100])
-    d.text((X0 - 40, Y0 - 82), "Quanto o Pacífico ficou mais quente (ou mais frio) que o normal", font=fonte(F_X, 40), fill=(20, 22, 28), anchor="lm")
+    d.text((X0 - 40, Y0 - 96), "Quanto o Pacífico ficou mais quente (ou mais frio) que o normal", font=fonte(F_X, 40), fill=(20, 22, 28), anchor="lm")
+    d.text((X0 - 40, Y0 - 50), "índice ONI da NOAA, média de 3 meses, °C", font=fonte(F_SB, 30), fill=(90, 95, 110), anchor="lm")
     for y in (-2, -1, 0, 1, 2):
         d.line([(X0, py(y)), (X1, py(y))], fill=(200, 205, 214) if y else (90, 95, 110), width=2 if y else 3)
-        d.text((X0 - 16, py(y)), (f"{y:+d} °C" if y else "0").replace("-", "−"), font=fonte(F_SB, 26), fill=(90, 95, 110), anchor="rm")
-    for a in range(1950, 2030, 10): d.text((px(a), Y1 + 36), str(a), font=fonte(F_SB, 28), fill=(90, 95, 110), anchor="mm")
+        d.text((X0 - 16, py(y)), (f"{y:+d} °C" if y else "0").replace("-", "−"), font=fonte(F_SB, 32), fill=(70, 75, 90), anchor="rm")
+    for a in range(1950, 2030, 10): d.text((px(a), Y1 + 40), str(a), font=fonte(F_SB, 32), fill=(90, 95, 110), anchor="mm")
     seg = [(px(ONI_A[i]), py(ONI_V[i]), ONI_V[i]) for i in range(len(ONI_A))]
     def f(lay, k, t):
         lay.alpha_composite(fundo); dd = ImageDraw.Draw(lay)
@@ -202,9 +204,11 @@ def grafico(t_draw, marcas):
             x, y = seg[m][:2]; dd.ellipse([x - 8, y - 8, x + 8, y + 8], fill=(230, 72, 15))
         for ano, rot, ta in marcas:
             if t < ta: continue
-            i = int(np.argmin(np.abs(ONI_A - ano))); x, y = px(ONI_A[i]), py(ONI_V[i]); s_ = volta((t - ta) / 0.3)
+            j = np.where(np.abs(ONI_A - ano) <= 0.7)[0]; i = int(j[np.argmax(ONI_V[j])]) if len(j) else int(np.argmin(np.abs(ONI_A - ano)))
+            x, y = px(ONI_A[i]), py(ONI_V[i]); s_ = volta((t - ta) / 0.3)
             r = 12 * s_; dd.ellipse([x - r, y - r, x + r, y + r], fill=(230, 72, 15), outline=(255, 255, 255), width=4)
-            L._cola(lay, G.chip_img(rot, 30, "#FF7A1A" if rot == "agora" else None), (x - (80 if rot == "agora" else 0), y - 60), 0.6 + 0.4 * s_, clamp((t - ta) / 0.15))
+            rot2 = f"{rot}: +{ONI_V[i]:.1f}".replace(".", ",")
+            L._cola(lay, G.chip_img(rot2, 34, "#FF7A1A" if rot == "agora" else None), (x - 150, y + 70) if rot == "agora" else (x, y - 64), 0.6 + 0.4 * s_, clamp((t - ta) / 0.15))
     return f
 
 
@@ -213,12 +217,12 @@ def walker(t_sobe, t_desce, t_seco):
     X0, X1, YM = 160, 1760, 820
     base = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(base)
     cartao(d, [X0 - 60, 150, X1 + 60, 960], a=240)
-    d.text((X0, 205), "O ar visto de lado", font=fonte(F_X, 40), fill=(20, 22, 28), anchor="lm")
+    d.text((X0, 205), "O ar visto de lado", font=fonte(F_X, 46), fill=(20, 22, 28), anchor="lm")
     d.rectangle([X0, YM, 1180, 900], fill=(30, 110, 170)); d.rectangle([X0 + 500, YM, 1180, 840], fill=(240, 120, 40))
     d.polygon([(1180, YM + 10), (1260, 760), (1330, 700), (1400, 690), (1760, 700), (1760, 900), (1180, 900)], fill=(96, 140, 72))
-    d.text((640, 870), "Pacífico quente", font=fonte(F_X, 30), fill=(255, 255, 255), anchor="mm")
-    d.text((1500, 790), "Amazônia", font=fonte(F_X, 32), fill=(255, 255, 255), anchor="mm")
-    d.text((1185, 940), "América do Sul", font=fonte(F_SB, 24), fill=(80, 85, 95), anchor="lm")
+    d.text((640, 868), "Pacífico quente", font=fonte(F_X, 36), fill=(255, 255, 255), anchor="mm")
+    d.text((1500, 790), "Amazônia", font=fonte(F_X, 40), fill=(255, 255, 255), anchor="mm")
+    d.text((1185, 935), "América do Sul", font=fonte(F_SB, 32), fill=(80, 85, 95), anchor="lm")
     nuvem = L.Figura("obj_nuvem_chuva", (0, 0), 0, 1).im; sol = L.Figura("obj_sol", (0, 0), 0, 1).im
     def seta(dd, pts, k, cor):
         m = max(2, int(len(pts) * k)); p = pts[:m]
@@ -292,7 +296,7 @@ def lista(itens):
             dd.ellipse([x, y - 26, x + 52, y + 26], fill=G.rgb(cor) + (int(255 * b),))
             dd.text((x + 26, y), str(i + 1), font=fonte(F_X, 30), fill=(255, 255, 255, int(255 * b)), anchor="mm")
             for j, linha in enumerate(txt.split("\n")):
-                dd.text((x + 80, y - 18 + j * 40 - (18 if "\n" not in txt else 0) + (18 if "\n" not in txt else 0)), linha, font=fonte(F_SB, 34 if j == 0 else 28), fill=(30, 34, 44, int(255 * b)) if j == 0 else (90, 95, 110, int(255 * b)), anchor="lm")
+                dd.text((x + 80, y - 18 + j * 40 - (18 if "\n" not in txt else 0) + (18 if "\n" not in txt else 0)), linha, font=fonte(F_SB, 38 if j == 0 else 32), fill=(30, 34, 44, int(255 * b)) if j == 0 else (90, 95, 110, int(255 * b)), anchor="lm")
         lay.alpha_composite(ov)
     return f
 
@@ -343,7 +347,7 @@ def montar():
               deriva=Caminho([(CAP(1), dict(geo=(-150, -4), z=1.0)), (S(8), dict(geo=(-145, 0), z=1.25)), (S(9), dict(geo=(-145, 0), z=1.35, rot=-2))]),
               camadas=[cap(1), Nome("EL NIÑO", T(7, "el"), S(9), tela=(W / 2, 240), size=86),
                        Linha([[(-180, 0), (-80, 0)]], T(8, "equador") - 0.3, 1.2, cor=(255, 255, 255), larg=4),
-                       Chip("linha do Equador", T(8, "equador"), S(9), geo=(-100, 0), size=32, dy=-45),
+                       Chip("linha do Equador", T(8, "equador"), S(9), geo=(-100, 0), size=36, dy=-45),
                        Contorno(N34, PA(0) - 0.1, 1.2, cor=(255, 210, 90), larg=6),
                        Chip("região de medição", PA(0) + 0.3, S(10), geo=(-145, -5), size=36, cor="#FFD25A", dy=60),
                        Chip("+0,5 °C por meses = El Niño", T(9, "meio"), S(10), geo=(-145, 5), size=38, cor=Sn, dy=-70)]), "mergulho")
@@ -362,8 +366,8 @@ def montar():
     add(Plano("peru", CAP(2), S(17) - 0.3, P["peru"], acesas=[(T(15, "demais"), P["peru_q"], "fade")],
               deriva=Caminho([(CAP(2), dict(c=(0.5, 0.55), z=1.05)), (S(14), dict(c=(0.45, 0.6), z=1.15, rot=-2)), (S(16), dict(c=(0.5, 0.55), z=1.0, rot=2))]),
               camadas=[cap(2), Nome("PERU", T(13, "peru"), S(15), geo=(-76.5, -10), size=50),
-                       Figura("obj_navio", (-81, -8), T(13, "pescadores"), S(17), 230), Chip("pescadores", T(13, "pescadores") + 0.2, S(14) + 1, geo=(-81, -8), size=34, dy=60),
-                       Figura("obj_calendario", (-84, -12), T(14, "natal"), S(15) + 1, 150), Chip("perto do Natal", T(14, "natal"), S(15) + 1, geo=(-84, -12), size=34, dy=60),
+                       Figura("obj_navio", (-81, -8), T(13, "pescadores"), S(17), 230), Chip("pescadores", T(13, "pescadores") + 0.2, S(14) + 1, geo=(-81, -8), size=36, dy=60),
+                       Figura("obj_calendario", (-84, -12), T(14, "natal"), S(15) + 1, 150), Chip("perto do Natal", T(14, "natal"), S(15) + 1, geo=(-84, -12), size=36, dy=60),
                        Chip("os peixes sumiam", T(15, "peixes"), S(17), geo=(-82, -6), size=38, cor=Sn, dy=-80),
                        Chip("El Niño = o Menino Jesus", T(16, "menino"), S(17), tela=(W / 2, 180), size=46, cor="#FFD25A")]))
     add(Plano("pesca", S(17) - 0.3, CAP(3), P["peru_q"],
@@ -387,7 +391,7 @@ def montar():
               deriva=Caminho([(S(24) - 0.3, dict(c=(0.5, 0.55), z=1.0, rot=2)), (PA(2), dict(c=(0.55, 0.55), z=1.04, rot=-1)), (S(26), dict(c=(0.62, 0.55), z=1.18, rot=-3))]),
               camadas=[Chip("ano de El Niño", S(24), S(28), tela=(W / 2, 140), size=44, cor=Sn),
                        Seta(vento_n[:3], T(24, "enfraquece"), S(26), 1.4, cor=(170, 180, 195), larg=7),
-                       Chip("o vento enfraquece", T(24, "enfraquece") + 0.2, S(26), geo=(-115, 7), size=34, dy=-60),
+                       Chip("o vento enfraquece", T(24, "enfraquece") + 0.2, S(26), geo=(-115, 7), size=36, dy=-60),
                        Seta([(-200, -2), (-160, -3), (-120, -3), (-88, -4)], T(25, "escorre"), S(27), 2.4, cor=(255, 122, 26)),
                        Figura("obj_nuvem_chuva", (-115, 0), T(26, "nuvens"), S(28), 220),
                        Figura("obj_nuvem_chuva", (-140, -1), T(26, "nuvens") + 0.4, S(28), 180),
@@ -398,7 +402,7 @@ def montar():
                        Seta([(-79, -2), (-74, -5), (-70, -8)], T(29, "dez"), CAP(4), 1.0, cor=(255, 122, 26), larg=10),
                        Chip("alaga", T(29, "alaga"), CAP(4), geo=(-53.5, -29.5), size=40, cor=Nn, dy=-80),
                        Chip("seca", T(29, "seca"), CAP(4), geo=(-61, 2), size=40, cor=A, dy=-80),
-                       Figura("obj_interrogacao", (-56, -14), T(29, "por"), CAP(4), 120)]))
+                       ]))
 
     # 5 — o Brasil dividido
     add(Plano("walker", CAP(4), S(33) - 0.3, P["pac"], desfoque=10, escurece=0.35,
@@ -410,7 +414,7 @@ def montar():
               camadas=[Seta(jato, T(34, "jato") - 0.3, CAP(5), 2.0, cor=(140, 200, 255), larg=22),
                        Chip("jato subtropical", T(34, "jato"), CAP(5), geo=(-62, -26), size=38, cor="#8CC8FF", dy=-80),
                        Seta([(-60, -38), (-56, -34), (-54, -31.5)], T(34, "frentes"), S(36), 1.0, cor=(63, 140, 255), larg=10),
-                       Chip("frente fria parada", PA(4), S(36), geo=(-56, -33), size=34, cor="#3FB4FF", dy=50),
+                       Chip("frente fria parada", PA(4), S(36), geo=(-56, -33), size=36, cor="#3FB4FF", dy=50),
                        Figura("obj_nuvem_chuva", (-53, -28), T(35, "chuva"), CAP(5), 200), Figura("obj_nuvem_chuva", (-50, -26), T(35, "dia"), CAP(5), 170),
                        Chip("menos chuva em cima, mais chuva embaixo", T(36, "resultado"), CAP(5), tela=(W / 2, 170), size=40)]))
 
@@ -424,11 +428,11 @@ def montar():
               deriva=Caminho([(S(39) - 0.3, dict(geo=(-61, 2), z=1.05)), (S(40), dict(geo=(-62, -2), z=1.1, rot=-3)), (S(41), dict(geo=(-60, -3), z=1.2, rot=2))]),
               camadas=[Minimapa(AM.union(RR), S(39), S(42)), Nome("RORAIMA", T(39, "roraima"), S(40), geo=(-61.5, 3.2), size=40),
                        Linha(rio("Branco"), T(39, "branco"), 1.6, cor=(110, 205, 255), larg=8),
-                       Chip("rio Branco: muito abaixo do normal", T(39, "muito"), S(42), geo=(-61.2, 1.2), size=34, cor=A, dy=-60),
+                       Chip("rio Branco: muito abaixo do normal", T(39, "muito"), S(42), geo=(-61.2, 1.2), size=36, cor=A, dy=-60),
                        Linha(rio("Rio Negro"), T(40, "negro"), 1.8, cor=(110, 205, 255), larg=8),
-                       Chip("rio Negro: navegação difícil", T(40, "navegacao"), S(42), geo=(-63.5, -1), size=34, cor=A, dy=60),
+                       Chip("rio Negro: navegação difícil", T(40, "navegacao"), S(42), geo=(-63.5, -1), size=36, cor=A, dy=60),
                        Figura("obj_navio", (-60.1, -3.2), T(41, "barco"), S(42), 200),
-                       Chip("comida e combustível não chegam", T(41, "comida"), S(42), geo=(-60.1, -3.2), size=34, dy=60)]))
+                       Chip("comida e combustível não chegam", T(41, "comida"), S(42), geo=(-60.1, -3.2), size=36, dy=60)]))
     add(Plano("fogo", S(42) - 0.3, CAP(6), P["amz_s"],
               deriva=Caminho([(S(42) - 0.3, dict(geo=(-61, -1), z=1.1, rot=2)), (T(42, "centenas"), dict(geo=(-62, -1), z=0.95, rot=-2))]),
               camadas=[Figura("obj_fogo", (-64, -2), T(42, "fogo"), CAP(6), 140), Figura("obj_fogo", (-59, -4), T(42, "fogo") + 0.3, CAP(6), 120),
@@ -443,10 +447,9 @@ def montar():
                        Linha(rio("Uruguay"), T(44, "historia") - 0.6, 1.6, cor=(110, 205, 255), larg=7)]), "mergulho")
     add(Plano("poa", PA(6) - 0.2, S(47) - 0.3, P["poa"],
               deriva=Caminho([(PA(6) - 0.2, dict(geo=(-51.2, -30.1), z=1.0, rot=0)), (S(46), dict(geo=(-51.22, -30.04), z=1.25, rot=2))], deriva_z=0.01),
-              camadas=[Chip("Porto Alegre", PA(6) + 0.4, S(47), geo=(-51.2, -30.03), size=36, dy=-50),
+              camadas=[Chip("Porto Alegre", PA(6) + 0.4, S(47), geo=(-51.2, -30.03), size=36, dy=-150),
                        Nome("GUAÍBA", PA(6) + 0.8, S(47), geo=(-51.27, -30.25), size=40),
-                       Chip("maio de 2024", T(45, "maio"), S(47), tela=(260, 120), size=40, cor="#FFD25A"),
-                       Chip("", T(45, "enchente"), S(47), geo=(-51.25, -30.12), size=46, cor=Nn, dy=-140, conta=(0, 5.35, lambda v: f"Guaíba: {v:.2f} m".replace(".", ","), 2.2)),
+                       Chip("", T(45, "enchente"), S(47), geo=(-51.25, -30.12), size=46, cor=Nn, dy=-140, conta=(0, 5.35, lambda v: f"cheia de 2024: Guaíba a {v:.2f} m".replace(".", ","), 2.2)),
                        Figura("obj_casa_alagada", (-51.14, -30.0), T(45, "enchente"), S(47), 200)]))
     add(Plano("nao_e", S(47) - 0.3, CAP(7), P["brasil_ns"],
               deriva=Caminho([(S(47) - 0.3, dict(geo=(-55, -15), z=1.0)), (T(47, "nao", 0) if False else E(47) - 0.9, dict(geo=(-50, -18), z=1.2, rot=-3))]),
@@ -456,19 +459,20 @@ def montar():
     usinas = [("Itaipu", -54.59, -25.41), ("Tucuruí", -49.65, -3.83), ("Belo Monte", -51.77, -3.12), ("Furnas", -46.32, -20.67), ("Sobradinho", -40.83, -9.43), ("Ilha Solteira", -51.36, -20.38)]
     cam_e = []
     for i, (nm, lo, la) in enumerate(usinas):
-        cam_e.append(Chip(nm, T(49, "represados") + i * 0.25, S(51), geo=(lo, la), size=30, cor="#19B5E0"))
-    add(Plano("energia", CAP(7), S(52) - 0.3, P["energia"],
+        cam_e.append(Chip(nm, T(49, "represados") + i * 0.25, S(51), geo=(lo, la), size=36, cor="#19B5E0"))
+    add(Plano("energia", CAP(7), S(52) - 0.3, P["energia"], acesas=[(T(49, "represados") - 0.3, P["energia_r"], "fade")],
               deriva=Caminho([(CAP(7), dict(geo=(-50, -15), z=1.0)), (S(50), dict(geo=(-49, -18), z=1.08, rot=2)), (S(51), dict(geo=(-60, -16), z=1.1, rot=-1))]),
               camadas=[cap(7)] + cam_e + [Figura("obj_fabrica", (-43.2, -22.9), T(50, "termicas"), S(52), 170),
-                       Chip("térmicas: energia mais cara", T(50, "caras"), S(52), geo=(-43.2, -22.9), size=34, cor="#E0461A", dy=60),
+                       Chip("onde ficam as grandes represas", T(49, "represados"), S(51), tela=(W / 2, 150), size=40, cor="#19B5E0"),
+                       Chip("térmicas: energia mais cara", T(50, "caras"), S(52), geo=(-43.2, -22.9), size=36, cor="#E0461A", dy=60),
                        Painel(conta_luz(T(51, "bandeira") - 0.4, T(51, "bandeira") + 0.3, T(51, "luz")), T(51, "bandeira") - 0.4, S(52))]), "mergulho")
     add(Plano("agro", S(52) - 0.3, S(55) - 0.3, P["agro"],
               deriva=Caminho([(S(52) - 0.3, dict(geo=(-52, -27), z=1.0, rot=-2)), (S(53), dict(geo=(-52.5, -28), z=1.12, rot=1)), (S(54), dict(geo=(-53, -29), z=1.2, rot=3))]),
               camadas=[Chip("na comida, o efeito é misto", T(52, "comida"), S(53), tela=(W / 2, 160), size=42),
                        Figura("obj_soja", (-52.5, -25.3), T(53, "soja"), S(55), 150), Figura("obj_trator", (-53.8, -28.6), T(53, "milho"), S(55), 190),
-                       Chip("soja e milho: chuva ajuda", T(53, "ajudar"), S(54), geo=(-52.5, -25.3), size=34, cor="#22C46A", dy=60),
+                       Chip("soja e milho: chuva ajuda", T(53, "ajudar"), S(54), geo=(-52.5, -25.3), size=36, cor="#22C46A", dy=60),
                        Figura("obj_casa_alagada", (-51.5, -29.6), T(54, "alagada"), S(55), 170),
-                       Chip("colheita alagada perde", T(54, "perde"), S(55), geo=(-51.5, -29.6), size=34, cor=Nn, dy=60),
+                       Chip("colheita alagada perde", T(54, "perde"), S(55), geo=(-51.5, -29.6), size=36, cor=Nn, dy=60),
                        Chip("Semiárido: quem planta para comer", T(54, "semiarido"), S(55), tela=(W / 2, 250), size=36, cor=A)]))
     add(Plano("asia", S(55) - 0.3, CAP(8), P["asia"],
               deriva=Caminho([(S(55) - 0.3, dict(geo=(110, 10), z=1.0)), (T(55, "australia"), dict(geo=(125, -10), z=1.1, rot=2)), (T(55, "arroz"), dict(geo=(118, 2), z=1.0, rot=-2))]),
@@ -481,8 +485,7 @@ def montar():
     # 9 — as outras vezes
     add(Plano("grafico", CAP(8), CAP(9), P["pac"], desfoque=12, escurece=0.4,
               deriva=Caminho([(CAP(8), dict(geo=(-140, 0), z=1.0)), (S(58), dict(geo=(-135, 0), z=1.05))]),
-              camadas=[cap(8), Painel(grafico(PA(7) - 0.3, [(1997.9, "1997–98", T(58, "noventa")), (2015.9, "2015–16", T(58, "dois")), (1983.0, "1982–83", T(58, "dois") + 0.6),
-                                                       (2023.9, "2023–24", T(58, "dois") + 0.9), (ONI_A[-1], "agora", T(59, "agora"))]), CAP(8), CAP(9))]), "mergulho")
+              camadas=[cap(8), Painel(grafico(PA(7) - 0.3, [(1997.9, "1997–98", T(58, "noventa")), (2015.9, "2015–16", T(58, "dois")), (ONI_A[-1], "agora", T(59, "agora"))]), CAP(8), CAP(9))]), "mergulho")
 
     # 10 — por que agora é diferente
     add(Plano("diferente", CAP(9), CAP(10), P["mundo"],
@@ -516,6 +519,8 @@ def montar():
               camadas=[Chip("menos chuva", T(76, "dividir"), DUR, geo=(-58, -4), size=40, cor=A, dy=-110),
                        Chip("mais chuva", T(76, "dividir") + 0.3, DUR, geo=(-52, -27), size=40, cor=Nn, dy=-120)]), "mergulho")
     for a, b in zip(planos, planos[1:]): a.t1 = b.t0
+    caps = [c["t"] for c in CAPS]
+    trocas = ["-"] + ["mergulho" if any(abs(p.t0 - c) < 0.05 for c in caps) else "fusao" for p in planos[1:]]
     return Filme(planos, trocas, DUR)
 
 
