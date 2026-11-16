@@ -21,6 +21,12 @@ Antes de qualquer roteiro, leia `docs/PROPOSTA_FORMATO_LONGO.md`. Responda ao us
   - o mergulho girando só nas viradas de bloco;
   - 3D com horizonte em 2–3 momentos por vídeo.
   - As regras fixas de câmera do curto não valem aqui.
+  - **Sem trancos (feedback do El Niño, 16/11/2026: "a câmera ficou dando umas travadinhas"):** a câmera sai de `motor/longo.py` (`Caminho`), que move entre as chaves com curva suave, prende as chaves dentro da placa e deriva sem mudar de sentido de uma vez. Antes do render, `longo.checar_camera(filme)` tem de voltar sem tranco acima de 3 px/quadro².
+- **Textos na tela (feedback do El Niño):**
+  - todo lugar citado na fala ganha um `Lugar` (pino no ponto exato do mapa + nome logo acima) **na palavra**. Ex.: "Peru" marcado no Peru, nunca uma etiqueta solta num canto;
+  - a etiqueta fica perto do que ela nomeia, sem cobrir o assunto, dentro da área segura (6 % de margem, o motor já segura);
+  - no máximo 2–3 etiquetas ao mesmo tempo, cada uma por pelo menos 2,5 s, sem sobrepor outra; letra de no mínimo 36 px;
+  - etiquetas em subpixel (o motor já faz), para andarem junto com o mapa sem tremer.
 - **Produção por blocos:** usar planos parametrizados (mapa-lousa, viagem, caminho, gráfico, comparador, ficha de dado, foto, lista). O código à mão fica só para o mecanismo principal.
 - **Roteiro:** todo roteiro passa por **dois revisores independentes** (agentes) antes da voz: um checa os dados na web, o outro a narrativa e a retenção. O texto final incorpora as duas revisões.
 - **Voz:**

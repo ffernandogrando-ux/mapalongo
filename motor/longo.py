@@ -102,21 +102,34 @@ class Caminho:
         else: x, y = c.get("c", (0.5, 0.5))[0] * placa.PW, c.get("c", (0.5, 0.5))[1] * placa.PH
         return np.array([x, y, c.get("z", 1.0), c.get("rot", 0.0)], float)
 
+    def _chaves_px(self, placa):
+        """Estados das chaves em px da placa, já presos dentro dela (calculado uma vez por placa)."""
+        k = id(placa)
+        if getattr(self, "_cache_k", None) != k:
+            base = W / placa.PW * 1.06; est = []
+            for _, c in self.chaves:
+                e = self._estado(placa, c); e[0], e[1] = _dentro(placa, e[0], e[1], base * e[2] * 0.97, e[3]); est.append(e)
+            self._cache_k, self._cache = k, est
+        return self._cache
+
     def matriz_t(self, placa, t, extra_z=1.0, extra_rot=0.0):
-        ks = self.chaves; est = [self._estado(placa, c) for _, c in ks]
+        """Sem trancos: cada movimento entre chaves começa e termina com velocidade zero (curva suave), as chaves já
+        vêm presas dentro da placa e a deriva é uma função contínua do tempo (não muda de sentido de uma vez)."""
+        ks = self.chaves; est = self._chaves_px(placa)
         i = max([j for j, (tk, _) in enumerate(ks) if tk <= t] or [0])
         e = est[i].copy()
         if i + 1 < len(ks):
-            t1 = ks[i + 1][0]; d = min(self.dur_mov, max(0.3, t1 - ks[i][0]))
-            k = suave((t - (t1 - d)) / d) if t > t1 - d else 0.0      # chega na chave seguinte bem na hora dela
-            e = est[i] * (1 - k) + est[i + 1] * k
-        # deriva contínua (alterna o sentido a cada chave)
-        sinal = 1 if i % 2 == 0 else -1; dt = t - ks[0][0]
-        z = e[2] * (1 + self.dz * dt) * extra_z; r = e[3] + sinal * self.drot * math.sin(dt / 3.0) * 3 + extra_rot
+            t1 = ks[i + 1][0]; d = min(self.dur_mov, max(0.6, t1 - ks[i][0]))
+            if t > t1 - d:
+                u = clamp((t - (t1 - d)) / d); k = u * u * u * (u * (u * 6 - 15) + 10)     # smootherstep
+                e = est[i] * (1 - k) + est[i + 1] * k
+        dt = t - ks[0][0]
+        z = e[2] * (1 + self.dz * dt) * extra_z
+        r = e[3] + self.drot * 3 * math.sin(dt / 4.0) + extra_rot
         base = W / placa.PW * 1.06
-        e[0], e[1] = _dentro(placa, e[0], e[1], base * z, r)
-        M = cv2.getRotationMatrix2D((e[0], e[1]), r, base * z)
-        M[0, 2] += W / 2 - e[0]; M[1, 2] += H / 2 - e[1]
+        x, y = _dentro(placa, e[0], e[1], base * z, r)
+        M = cv2.getRotationMatrix2D((x, y), r, base * z)
+        M[0, 2] += W / 2 - x; M[1, 2] += H / 2 - y
         return M
 
 
@@ -148,12 +161,24 @@ def _pop(t, t_in, t_out, dur=0.28):
     return s, a
 
 
+MARGEM = 0.06      # área segura: nenhuma etiqueta encosta na borda (6 % de cada lado)
+
+
+def seguro(xy, im):
+    mx, my = W * MARGEM, H * MARGEM
+    return (min(max(xy[0], mx + im.width / 2), W - mx - im.width / 2), min(max(xy[1], my + im.height / 2), H - my - im.height / 2))
+
+
 def _cola(lay, im, xy, s=1.0, a=1.0):
     if a <= 0.01 or s <= 0.02: return
     if abs(s - 1) > 0.01: im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.BILINEAR)
     if a < 0.99:
         im = im.copy(); im.putalpha(im.getchannel("A").point(lambda v: int(v * a)))
-    lay.alpha_composite(im, (int(xy[0] - im.width / 2), int(xy[1] - im.height / 2)))
+    x, y = xy[0] - im.width / 2, xy[1] - im.height / 2; ix, iy = math.floor(x), math.floor(y)
+    fx, fy = x - ix, y - iy
+    if fx > 0.02 or fy > 0.02:     # desloca a fração de pixel com interpolação: a etiqueta anda junto com o mapa, sem tremer
+        im = im.transform((im.width + 1, im.height + 1), Image.AFFINE, (1, 0, -fx, 0, 1, -fy), resample=Image.BILINEAR)
+    lay.alpha_composite(im, (ix, iy))
 
 
 class Chip(Camada):
@@ -172,7 +197,23 @@ class Chip(Camada):
             de, ate, fmt, dur = self.conta; k = sai((t - self.t_in) / dur)
             txt = fmt(lerp(de, ate, k))
         xy = self.tela or aplica(M, placa.geo(*self.geo)); xy = (xy[0], xy[1] + self.dy)
-        _cola(lay, self.img(txt), xy, s, a)
+        im = self.img(txt); _cola(lay, im, seguro(xy, im), s, a)
+
+
+class Lugar(Camada):
+    """Lugar citado na fala: pino branco com aro no ponto exato do mapa + etiqueta logo acima, na palavra."""
+    def __init__(self, texto, geo, t_in, t_out, size=38, cor="#E0461A", lado="cima"):
+        self.texto, self.geo, self.t_in, self.t_out, self.lado = texto, geo, t_in, t_out, lado
+        self.chip = G.chip_img(texto, size, None)
+        r = 16; im = Image.new("RGBA", (r * 4, r * 4), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        d.ellipse([r, r, r * 3, r * 3], fill=(255, 255, 255, 255)); d.ellipse([r + 6, r + 6, r * 3 - 6, r * 3 - 6], fill=G.rgb(cor) + (255,))
+        self.pino = G.com_sombra(im, 5, 0.5, (2, 4))
+    def desenha(self, lay, t, M, placa):
+        s, a = _pop(t, self.t_in, self.t_out)
+        x, y = aplica(M, placa.geo(*self.geo))
+        _cola(lay, self.pino, (x, y), s, a)
+        dy = -(self.chip.height / 2 + 14) if self.lado == "cima" else (self.chip.height / 2 + 14)
+        _cola(lay, self.chip, seguro((x, y + dy * (0.7 + 0.3 * s)), self.chip), s, a)
 
 
 class Nome(Camada):
@@ -373,3 +414,32 @@ class Filme:
             pr.stdin.write((np.clip(f, 0, 1) * 255).astype(np.uint8).tobytes())
         pr.stdin.close(); pr.wait()
         return saida
+
+
+# ------------------------------------------------------------------------------------------- conferência da câmera
+def checar_camera(filme, passo=1):
+    """Mede, quadro a quadro, quanto a tela anda (pontos de uma grade levados pela câmera) e acusa TRANCOS:
+    quadros em que a velocidade muda de repente (aceleração acima do limite). Ignora as trocas de plano."""
+    g = np.array([[x, y] for x in (W * 0.2, W * 0.5, W * 0.8) for y in (H * 0.2, H * 0.5, H * 0.8)])
+    def pos(p, t):
+        if isinstance(p.deriva, Caminho): M = p.deriva.matriz_t(p.placa, t)
+        else: M = p.deriva.matriz(p.placa, (t - p.t0) / max(p.t1 - p.t0, 0.1))
+        Mi = cv2.invertAffineTransform(M); M2 = M                          # ponto fixo do mapa (o do centro em t)
+        return M
+    trancos = []
+    for p in filme.planos:
+        n0, n1 = int(math.ceil(p.t0 * FPS)) + 1, int(p.t1 * FPS) - 1
+        pts_mapa = None; prev = None; vprev = None
+        for n in range(n0, n1, passo):
+            t = n / FPS; M = pos(p, t)
+            if pts_mapa is None:
+                Mi = cv2.invertAffineTransform(M); pts_mapa = np.array([aplica(Mi, q) for q in g])
+            tela = np.array([aplica(M, q) for q in pts_mapa])
+            if prev is not None:
+                v = tela - prev
+                if vprev is not None:
+                    a = np.abs(v - vprev).max()
+                    if a > 1.5: trancos.append((round(t, 2), p.nome, round(float(a), 1)))
+                vprev = v
+            prev = tela
+    return trancos
