@@ -22,13 +22,16 @@ Antes de qualquer roteiro, leia `docs/PROPOSTA_FORMATO_LONGO.md`. Responda ao us
   - 3D com horizonte em 2–3 momentos por vídeo.
   - As regras fixas de câmera do curto não valem aqui.
 - **Produção por blocos:** usar planos parametrizados (mapa-lousa, viagem, caminho, gráfico, comparador, ficha de dado, foto, lista). O código à mão fica só para o mecanismo principal.
+- **Roteiro:** todo roteiro passa por **dois revisores independentes** (agentes) antes da voz: um checa os dados na web, o outro a narrativa e a retenção. O texto final incorpora as duas revisões.
 - **Voz:**
+  - a voz é a do dono do canal, clonada no Fish Audio (`voz/`), com tags de emoção (aprovada em 16/11/2026);
+  - pausas na narração são permitidas quando fazem sentido e o vídeo mostra algo durante a pausa (número contando, contorno se desenhando, seta andando, imagem de satélite);
   - sempre a mesma voz;
   - nunca clonar a voz de uma pessoa real sem autorização por escrito;
   - controle de qualidade automático em toda narração: Whisper × roteiro, pausas, velocidade, tom e nível, com 2 a 3 versões por frase.
-- **Antes do render final:** mandar a prancha (um quadro por plano, com o tempo e a frase) e um trecho em vídeo, e esperar o ok.
+- **Antes do render final:** mandar a prancha (um quadro por plano, com o tempo e a frase) e um trecho em vídeo, e esperar o ok. Quando o dono estiver ausente e pedir, as dúvidas e o ok da prancha vão para um agente independente (consultor), e o dono vê tudo quando voltar.
+- **Som:** efeitos sutis nas trocas de bloco e nas entradas importantes; música opcional, só se fizer sentido e bem baixa, por baixo da voz.
 - **Herdado do curto:**
   - dados conferidos na web;
-  - sem música;
   - créditos na descrição;
   - arquivo de imagens de IA (`roteiros/<video>_imagens.txt`).
