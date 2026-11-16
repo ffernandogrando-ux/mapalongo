@@ -2,3 +2,9 @@
 *.mp3
 *.raw
 voz/f*_v*.wav
+elnino/placas/
+elnino/quadros/
+*.mp4
+elnino/partes.txt
+elnino/audio/*.log
+__pycache__/

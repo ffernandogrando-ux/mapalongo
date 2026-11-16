@@ -1,0 +1,94 @@
+# El Niño 2026 — vídeo longo (16:9) — roteiro v1
+# Uma frase por linha (vira uma geração de voz). [tag] = emoção (não é falada). {pausa N: o que aparece} = silêncio de N s com algo na tela.
+# Linhas com ">" são marcação de plano (não são faladas).
+
+## 1. GANCHO
+> plano: Brasil em 3D com horizonte, Norte amarelo-seca subindo, Sul azul-cheia subindo
+[serious] O mesmo fenômeno vai deixar o Norte do Brasil sem chuva e o Sul debaixo d'água.
+[curious] E ele não acontece aqui.
+> plano: mergulho girando até o Pacífico
+[curious] Ele acontece do outro lado do mundo, no meio do Oceano Pacífico.
+[serious] Agora mesmo, a água por lá está mais quente do que em quase qualquer outro momento das últimas décadas.
+[confident] Nos próximos minutos, você vai entender como uma faixa de mar quente perto do Peru mexe com a chuva em Porto Alegre, com os rios da Amazônia e com o seu bolso.
+[confident] E por que isso volta, de tempos em tempos.
+
+## 2. O QUE ESTÁ ACONTECENDO
+> plano: Pacífico de cima, faixa quente se acende
+[serious] O nome é El Niño.
+[serious] Os meteorologistas medem a temperatura da água numa faixa do Pacífico, bem em cima da linha do Equador.
+{pausa 1.2: a caixa da região de medição se desenha no mar}
+[serious] Quando ela passa meio grau acima do normal por alguns meses, já é El Niño.
+[excited] Agora, ela está quase dois graus e meio acima do normal.
+{pausa 1.0: o número conta até +2,5 °C}
+[serious] Para a agência americana de oceanos e atmosfera, é o El Niño mais forte para esta época do ano desde mil novecentos e noventa e sete.
+> plano: Brasil, etiqueta do Inmet
+[serious] E o Instituto Nacional de Meteorologia prevê que ele chegue ao auge entre novembro e janeiro, na categoria muito forte.
+
+## 3. DE ONDE VEIO O NOME
+> plano: costa do Peru em 3D, vista do mar
+[thoughtful] O nome veio de pescadores do Peru.
+[thoughtful] Em alguns anos, perto do Natal, eles percebiam que o mar ficava mais quente e os peixes sumiam.
+[thoughtful] Chamaram isso de El Niño, o Menino Jesus.
+[serious] Para eles, era um ano ruim de pesca. Hoje a gente sabe que é muito mais do que isso.
+
+## 4. COMO FUNCIONA
+> plano: Pacífico em 3D, ventos alísios andando de leste para oeste
+[confident] Funciona assim.
+[confident] Num ano normal, os ventos sopram sobre o Pacífico de leste para oeste, do lado da América do Sul para o lado da Indonésia e da Austrália.
+{pausa 1.5: as setas do vento atravessam o oceano}
+[confident] Eles empurram a água quente da superfície para o outro lado, e ela se acumula por lá.
+[confident] Perto do Peru, no lugar dela, sobe água fria do fundo do mar, cheia de nutrientes. É por isso que ali tem tanto peixe.
+> plano: o vento enfraquece, a mancha quente escorre de volta
+[serious] Num ano de El Niño, esses ventos enfraquecem.
+[serious] E a água quente que estava presa do outro lado escorre de volta, em direção à América do Sul.
+{pausa 1.5: a mancha laranja se espalha pelo Pacífico até o Peru}
+[serious] Onde tem mar mais quente, sobe mais ar quente e úmido, e é ali que se formam as nuvens de chuva.
+[serious] Então, quando a água quente muda de lugar, a chuva muda de lugar junto.
+[curious] E essa mudança não fica só no Pacífico. Ela mexe com a circulação do ar do planeta inteiro.
+
+## 5. O BRASIL DIVIDIDO AO MEIO
+> plano: o ar sobe no Pacífico e desce sobre a Amazônia (perfil)
+[serious] No Brasil, o efeito é um país dividido ao meio.
+[serious] Sobre o Norte e parte do Nordeste, o ar passa a descer em vez de subir, e as nuvens têm dificuldade para se formar.
+> plano: Sul em 3D, corredor de umidade e frentes paradas
+[serious] Já no Sul, as frentes frias e as chuvas tendem a ficar paradas por mais tempo sobre a região.
+[serious] O resultado é menos chuva em cima e mais chuva embaixo.
+
+## 6. O NORTE E O NORDESTE
+> plano: Nordeste, área em seca grave crescendo
+[serious] No Nordeste, a área em seca grave saltou de dezesseis para vinte e oito por cento entre agosto e setembro.
+{pausa 1.0: a mancha de seca cresce no mapa}
+> plano: Roraima e os rios Branco e Negro
+[serious] Na Amazônia, rios como o Negro e o Branco já estão baixos, principalmente em Roraima.
+[serious] E rio baixo, na Amazônia, é estrada fechada: barco que não passa, comida e combustível que não chegam.
+[thoughtful] A floresta mais seca também pega fogo com mais facilidade, e centenas de municípios do Norte estão em alerta para o risco de incêndio.
+
+## 7. O SUL
+> plano: Rio Grande do Sul, rios Uruguai e Jacuí acendendo
+[serious] Enquanto isso, no Sul, a previsão é de chuva acima da média.
+[serious] E a região conhece bem essa história.
+> plano: satélite como prova, Guaíba e Porto Alegre
+{pausa 1.5: transição para a imagem de satélite}
+[serious] Em maio de dois mil e vinte e quatro, no fim do último El Niño forte, o Rio Grande do Sul viveu a maior enchente da sua história.
+[thoughtful] Não foi só o El Niño. Mas ele ajudou a deixar a atmosfera pronta para chuvas muito acima do normal.
+
+## 8. AS OUTRAS VEZES
+> plano: gráfico do índice desde 1950
+[curious] E isso já aconteceu antes.
+[confident] Este gráfico mostra quanto o Pacífico ficou mais quente ou mais frio que o normal, desde mil novecentos e cinquenta.
+{pausa 1.5: a linha do gráfico se desenha até hoje}
+[confident] Cada pico laranja é um El Niño. Os maiores foram em oitenta e dois, em noventa e sete, em dois mil e quinze, em dois mil e vinte e três.
+[serious] E agora, a linha está subindo de novo, e perto do topo.
+
+## 9. O QUE FAZER
+> plano: lista sobre o mapa
+[confident] Então, o que dá para fazer?
+[confident] Se você mora no Sul, fique de olho nos alertas da Defesa Civil e no nível dos rios perto de você.
+[confident] Se você mora no Norte ou no Nordeste, a atenção é com a falta d'água, o fogo e os rios baixos.
+[confident] E em qualquer lugar, vale ter um kit de emergência pronto em casa.
+[thoughtful] O El Niño deve perder força no começo de dois mil e vinte e sete. Até lá, os próximos meses são os mais intensos.
+
+## 10. OU SEJA
+> plano: Brasil em 3D, aberto, dividido em duas cores
+[serious] Ou seja: quando a água esquenta do outro lado do Pacífico, o Brasil inteiro sente.
+[thoughtful] Só que em cada lugar de um jeito diferente.

@@ -1,0 +1,2139 @@
+[
+ {
+  "n": 1,
+  "texto": "[serious] O mesmo fenômeno vai deixar o Norte do Brasil sem chuva e o Sul debaixo d'água.",
+  "escolhida": "001_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/001_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.4,
+    "tom_st": 4.19,
+    "nota": 0.35,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/001_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.4,
+    "tom_st": 4.42,
+    "nota": 0.35,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "texto": "[curious] E ele não acontece aqui.",
+  "escolhida": "002_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/002_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 15.8,
+    "tom_st": 8.25,
+    "nota": 0.21,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/002_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.4,
+    "tom_st": 0.0,
+    "nota": 2.79,
+    "avisos": [
+     "tom monótono (0.0 st)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "texto": "[curious] Acontece do outro lado do mundo, no meio do Oceano Pacífico.",
+  "escolhida": "003_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/003_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 14.9,
+    "tom_st": 4.7,
+    "nota": 0.02,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/003_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.2,
+    "cps": 15.1,
+    "tom_st": 4.16,
+    "nota": 0.02,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "texto": "[serious] E agora ele está mais forte do que nunca para esta época do ano.",
+  "escolhida": "004_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/004_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.3,
+    "tom_st": 3.77,
+    "nota": 0.32,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/004_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.18,
+    "cps": 16.9,
+    "tom_st": 3.05,
+    "nota": 0.47,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "texto": "[confident] Neste vídeo, você vai ver como um mar quente perto do Peru mexe com a chuva em Porto Alegre e com os rios da Amazônia.",
+  "escolhida": "005_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/005_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.16,
+    "cps": 16.5,
+    "tom_st": 3.06,
+    "nota": 0.38,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/005_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.12,
+    "cps": 16.9,
+    "tom_st": 3.79,
+    "nota": 0.46,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "texto": "[thoughtful] E por que ele também pode pesar na conta de luz e no preço da comida.",
+  "escolhida": "006_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/006_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.9,
+    "tom_st": 4.81,
+    "nota": 0.74,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/006_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 18.2,
+    "tom_st": 4.0,
+    "nota": 0.79,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "texto": "[serious] O nome dele é El Niño.",
+  "escolhida": "007_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/007_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 12.1,
+    "tom_st": 3.77,
+    "nota": 0.73,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/007_v2.wav",
+    "wer": 0.167,
+    "pausa": 0.0,
+    "cps": 11.8,
+    "tom_st": 5.17,
+    "nota": 2.47,
+    "avisos": [
+     "palavra errada (o nome dele e el nimio)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "texto": "[confident] Os meteorologistas medem a temperatura da água numa faixa do Pacífico, bem em cima da linha do Equador.",
+  "escolhida": "008_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/008_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.02,
+    "cps": 17.6,
+    "tom_st": 3.85,
+    "nota": 0.66,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/008_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.08,
+    "cps": 17.5,
+    "tom_st": 3.23,
+    "nota": 0.62,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "texto": "[confident] Quando ela fica meio grau acima do normal por alguns meses seguidos, já é El Niño.",
+  "escolhida": "009_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/009_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.26,
+    "cps": 15.8,
+    "tom_st": 2.91,
+    "nota": 0.2,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/009_v2.wav",
+    "wer": 0.125,
+    "pausa": 0.28,
+    "cps": 16.5,
+    "tom_st": 4.67,
+    "nota": 1.64,
+    "avisos": [
+     "palavra errada (quando ela fica meio grau acima do normal por alguns meses seguidos ja e o ninho)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "texto": "[serious] Em outubro, ela chegou a quase dois graus e meio acima do normal.",
+  "escolhida": "010_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/010_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.08,
+    "cps": 15.6,
+    "tom_st": 3.59,
+    "nota": 0.15,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/010_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.08,
+    "cps": 16.7,
+    "tom_st": 4.03,
+    "nota": 0.43,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "texto": "[surprised] É o maior valor já medido para esta época do ano.",
+  "escolhida": "011_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/011_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.1,
+    "tom_st": 3.65,
+    "nota": 0.27,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/011_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.3,
+    "tom_st": 3.68,
+    "nota": 0.33,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "texto": "[serious] E o Inmet, o Instituto Nacional de Meteorologia, prevê que ele chegue ao auge entre novembro e janeiro, na categoria muito forte.",
+  "escolhida": "012_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/012_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.28,
+    "cps": 17.1,
+    "tom_st": 3.11,
+    "nota": 0.52,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/012_v2.wav",
+    "wer": 0.045,
+    "pausa": 0.32,
+    "cps": 16.6,
+    "tom_st": 4.54,
+    "nota": 0.85,
+    "avisos": [
+     "palavra errada (e o imet o instituto nacional de meteorologia preve que ele chegue ao auge entre novembro e janeiro na categoria muito forte)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "texto": "[thoughtful] O nome veio de pescadores do Peru.",
+  "escolhida": "013_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/013_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.4,
+    "tom_st": 4.0,
+    "nota": 0.35,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/013_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.7,
+    "tom_st": 4.21,
+    "nota": 0.44,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "texto": "[thoughtful] Todo ano, perto do Natal, o mar ali esquentava um pouco.",
+  "escolhida": "014_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/014_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.3,
+    "cps": 16.1,
+    "tom_st": 4.43,
+    "nota": 0.29,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/014_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 15.7,
+    "tom_st": 4.07,
+    "nota": 0.18,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "texto": "[curious] Mas, em alguns anos, esquentava demais, e os peixes sumiam.",
+  "escolhida": "015_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/015_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 13.7,
+    "tom_st": 2.53,
+    "nota": 0.31,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/015_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.22,
+    "cps": 14.2,
+    "tom_st": 3.79,
+    "nota": 0.2,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "texto": "[thoughtful] Chamaram isso de El Niño, o Menino Jesus.",
+  "escolhida": "016_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/016_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.26,
+    "cps": 13.5,
+    "tom_st": 4.57,
+    "nota": 0.38,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/016_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.28,
+    "cps": 13.7,
+    "tom_st": 4.89,
+    "nota": 0.32,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 17,
+  "texto": "[serious] Para eles, era um ano ruim de pesca. Hoje a gente sabe que é muito mais do que isso.",
+  "escolhida": "017_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/017_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.4,
+    "cps": 16.3,
+    "tom_st": 4.17,
+    "nota": 0.34,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/017_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.4,
+    "cps": 15.6,
+    "tom_st": 5.39,
+    "nota": 0.16,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 18,
+  "texto": "[curious] E para entender, a gente precisa olhar para o vento.",
+  "escolhida": "018_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/018_v1.wav",
+    "wer": 0.2,
+    "pausa": 0.42,
+    "cps": 17.6,
+    "tom_st": 5.47,
+    "nota": 2.64,
+    "avisos": [
+     "palavra errada (e para entender a gente precisa olhar pro vento)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/018_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.44,
+    "cps": 18.7,
+    "tom_st": 5.3,
+    "nota": 0.93,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 19,
+  "texto": "[confident] Funciona assim.",
+  "escolhida": "019_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/019_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 12.3,
+    "tom_st": 3.74,
+    "nota": 0.67,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/019_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 11.9,
+    "tom_st": 6.48,
+    "nota": 0.78,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "texto": "[confident] Num ano normal, o vento sopra sobre o Pacífico de leste para oeste.",
+  "escolhida": "020_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/020_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 15.9,
+    "tom_st": 4.97,
+    "nota": 0.23,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/020_v2.wav",
+    "wer": 0.077,
+    "pausa": 0.32,
+    "cps": 16.3,
+    "tom_st": 4.02,
+    "nota": 1.09,
+    "avisos": [
+     "palavra errada (no ano normal o vento sopra sobre o pacifico de leste para oeste)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 21,
+  "texto": "[confident] Sai do lado da América do Sul e vai em direção à Indonésia e à Austrália.",
+  "escolhida": "021_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/021_v1.wav",
+    "wer": 0.062,
+    "pausa": 0.0,
+    "cps": 17.0,
+    "tom_st": 3.39,
+    "nota": 1.11,
+    "avisos": [
+     "palavra errada (sai do lado da america do sul e va em direcao a indonesia e a australia)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/021_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.6,
+    "tom_st": 3.53,
+    "nota": 0.4,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 22,
+  "texto": "[confident] Ele empurra a água quente da superfície para o outro lado, e ela se acumula por lá.",
+  "escolhida": "022_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/022_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 19.4,
+    "tom_st": 3.99,
+    "nota": 1.11,
+    "avisos": [
+     "velocidade 19 car/s"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/022_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.7,
+    "tom_st": 4.2,
+    "nota": 0.68,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 23,
+  "texto": "[thoughtful] Perto do Peru, no lugar dela, sobe água fria das camadas mais fundas, cheia de nutrientes. É por isso que ali tem tanto peixe.",
+  "escolhida": "023_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/023_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 15.1,
+    "tom_st": 4.13,
+    "nota": 0.03,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/023_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.5,
+    "cps": 16.1,
+    "tom_st": 4.03,
+    "nota": 0.27,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 24,
+  "texto": "[serious] Num ano de El Niño, esse vento enfraquece.",
+  "escolhida": "024_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/024_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.22,
+    "cps": 14.7,
+    "tom_st": 4.18,
+    "nota": 0.08,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/024_v2.wav",
+    "wer": 0.25,
+    "pausa": 0.16,
+    "cps": 15.4,
+    "tom_st": 5.86,
+    "nota": 2.61,
+    "avisos": [
+     "palavra errada (num ano de alninho esse vento enfraquece)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 25,
+  "texto": "[serious] E a água quente que estava presa do outro lado escorre de volta, em direção à América do Sul.",
+  "escolhida": "025_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/025_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 17.6,
+    "tom_st": 2.8,
+    "nota": 0.65,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/025_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 17.6,
+    "tom_st": 3.26,
+    "nota": 0.65,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 26,
+  "texto": "[confident] Onde o mar é mais quente, sobe mais ar quente e úmido. E é ali que se formam as nuvens de chuva.",
+  "escolhida": "026_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/026_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 16.1,
+    "tom_st": 3.7,
+    "nota": 0.27,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/026_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.26,
+    "cps": 15.6,
+    "tom_st": 3.95,
+    "nota": 0.15,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 27,
+  "texto": "[thoughtful] Então, quando a água quente muda de lugar, a chuva muda de lugar junto.",
+  "escolhida": "027_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/027_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 16.7,
+    "tom_st": 4.61,
+    "nota": 0.42,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/027_v2.wav",
+    "wer": 0.071,
+    "pausa": 0.48,
+    "cps": 15.8,
+    "tom_st": 4.28,
+    "nota": 0.92,
+    "avisos": [
+     "palavra errada (entao quando a agua quente e muda de lugar a chuva muda de lugar junto)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 28,
+  "texto": "[curious] Mas aí vem a parte estranha.",
+  "escolhida": "028_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/028_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 15.2,
+    "tom_st": 3.1,
+    "nota": 0.06,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/028_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 15.6,
+    "tom_st": 5.53,
+    "nota": 0.15,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 29,
+  "texto": "[curious] A água quente está a mais de dez mil quilômetros daqui. Por que é o Rio Grande do Sul que alaga, e Roraima que seca?",
+  "escolhida": "029_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/029_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.54,
+    "cps": 15.9,
+    "tom_st": 3.98,
+    "nota": 0.24,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/029_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.44,
+    "cps": 17.0,
+    "tom_st": 3.51,
+    "nota": 0.51,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 30,
+  "texto": "[confident] Todo ar que sobe precisa descer em algum lugar.",
+  "escolhida": "030_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/030_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 15.9,
+    "tom_st": 2.75,
+    "nota": 0.23,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/030_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.7,
+    "tom_st": 1.78,
+    "nota": 0.84,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 31,
+  "texto": "[confident] Com o El Niño, ele sobe no meio do Pacífico e desce justamente sobre a Amazônia e o norte do Nordeste.",
+  "escolhida": "031_v3.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/031_v1.wav",
+    "wer": 0.095,
+    "pausa": 0.24,
+    "cps": 15.5,
+    "tom_st": 4.83,
+    "nota": 1.08,
+    "avisos": [
+     "palavra errada (com o eoninho ele sobe no meio do pacifico e desce justamente sobre a amazonia e o norte do nordeste)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/031_v2.wav",
+    "wer": 0.19,
+    "pausa": 0.3,
+    "cps": 15.8,
+    "tom_st": 4.51,
+    "nota": 2.12,
+    "avisos": [
+     "palavra errada (como e o ninho ele sobe no meio do pacifico e desce justamente sobre a amazonia e o norte do nordeste)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/031_v3.wav",
+    "wer": 0.0,
+    "pausa": 0.2,
+    "cps": 15.8,
+    "tom_st": 2.56,
+    "nota": 0.21,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 32,
+  "texto": "[serious] E ar descendo é céu limpo, sem nuvem e sem chuva.",
+  "escolhida": "032_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/032_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.16,
+    "cps": 13.1,
+    "tom_st": 4.42,
+    "nota": 0.47,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/032_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.16,
+    "cps": 12.4,
+    "tom_st": 4.58,
+    "nota": 0.66,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 33,
+  "texto": "[curious] No Sul, acontece outra coisa.",
+  "escolhida": "033_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/033_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 13.2,
+    "tom_st": 4.03,
+    "nota": 0.45,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/033_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 14.4,
+    "tom_st": 4.8,
+    "nota": 0.16,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 34,
+  "texto": "[confident] Lá no alto, uma corrente de vento muito forte, o jato subtropical, se intensifica e segura as frentes frias em cima da região.",
+  "escolhida": "034_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/034_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.36,
+    "cps": 15.2,
+    "tom_st": 4.93,
+    "nota": 0.05,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/034_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 15.8,
+    "tom_st": 4.66,
+    "nota": 0.2,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 35,
+  "texto": "[serious] A chuva fica parada, dia após dia, no mesmo lugar.",
+  "escolhida": "035_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/035_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 14.6,
+    "tom_st": 5.07,
+    "nota": 0.09,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/035_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.16,
+    "cps": 14.3,
+    "tom_st": 3.32,
+    "nota": 0.18,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 36,
+  "texto": "[thoughtful] O resultado é menos chuva em cima e mais chuva embaixo. Um país dividido ao meio.",
+  "escolhida": "036_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/036_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.44,
+    "cps": 15.1,
+    "tom_st": 5.64,
+    "nota": 0.02,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/036_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 15.9,
+    "tom_st": 4.49,
+    "nota": 0.23,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 37,
+  "texto": "[serious] No Nordeste, a área em seca grave saltou de dezesseis para vinte e oito por cento em um mês.",
+  "escolhida": "037_v2.wav",
+  "avisos": [
+   "palavra errada (no nordeste a area em seca grave saltou de dezesseis por cento para vinte e oito por cento em um mes)"
+  ],
+  "ouvir": true,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/037_v1.wav",
+    "wer": 0.105,
+    "pausa": 0.28,
+    "cps": 16.6,
+    "tom_st": 4.2,
+    "nota": 1.44,
+    "avisos": [
+     "palavra errada (no nordeste a area em seca grave saltou de dezesseis por cento para vinte e oito por cento em um mes)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/037_v2.wav",
+    "wer": 0.105,
+    "pausa": 0.22,
+    "cps": 16.4,
+    "tom_st": 2.45,
+    "nota": 1.41,
+    "avisos": [
+     "palavra errada (no nordeste a area em seca grave saltou de dezesseis por cento para vinte e oito por cento em um mes)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/037_v3.wav",
+    "wer": 0.105,
+    "pausa": 0.24,
+    "cps": 16.4,
+    "tom_st": 2.74,
+    "nota": 1.41,
+    "avisos": [
+     "palavra errada (no nordeste a area em seca grave saltou de dezesseis por cento para vinte e oito por cento em um mes)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 38,
+  "texto": "[serious] E quase toda a região já tem algum grau de seca.",
+  "escolhida": "038_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/038_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 13.9,
+    "tom_st": 3.38,
+    "nota": 0.28,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/038_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.0,
+    "tom_st": 4.34,
+    "nota": 0.25,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 39,
+  "texto": "[serious] Em Roraima, o rio Branco está muito abaixo do normal.",
+  "escolhida": "039_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/039_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 15.9,
+    "tom_st": 4.91,
+    "nota": 0.23,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/039_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 16.4,
+    "tom_st": 4.9,
+    "nota": 0.34,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 40,
+  "texto": "[serious] E o rio Negro, no Amazonas, já atrapalha a navegação.",
+  "escolhida": "040_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/040_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 14.9,
+    "tom_st": 3.87,
+    "nota": 0.02,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/040_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.22,
+    "cps": 14.9,
+    "tom_st": 3.83,
+    "nota": 0.02,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 41,
+  "texto": "[thoughtful] E rio baixo, na Amazônia, é estrada fechada: barco que não passa, comida e combustível que não chegam.",
+  "escolhida": "041_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/041_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 14.6,
+    "tom_st": 5.57,
+    "nota": 0.1,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/041_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 15.3,
+    "tom_st": 3.86,
+    "nota": 0.07,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 42,
+  "texto": "[serious] A floresta mais seca também pega fogo com mais facilidade. Centenas de municípios, a maioria no Norte, estão em alerta para incêndio.",
+  "escolhida": "042_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/042_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.52,
+    "cps": 15.6,
+    "tom_st": 3.85,
+    "nota": 0.15,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/042_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.42,
+    "cps": 16.2,
+    "tom_st": 3.78,
+    "nota": 0.3,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 43,
+  "texto": "[serious] Enquanto isso, no Sul, a previsão é de chuva acima da média até o verão.",
+  "escolhida": "043_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/043_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.28,
+    "cps": 16.7,
+    "tom_st": 4.75,
+    "nota": 0.43,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/043_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 15.6,
+    "tom_st": 3.52,
+    "nota": 0.14,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 44,
+  "texto": "[thoughtful] E a região conhece bem essa história.",
+  "escolhida": "044_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/044_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.7,
+    "tom_st": 5.41,
+    "nota": 0.42,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/044_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 18.2,
+    "tom_st": 4.47,
+    "nota": 0.8,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 45,
+  "texto": "[serious] Em maio de dois mil e vinte e quatro, no fim do último El Niño forte, o Rio Grande do Sul viveu a maior enchente da sua história.",
+  "escolhida": "045_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/045_v1.wav",
+    "wer": 0.107,
+    "pausa": 0.44,
+    "cps": 17.0,
+    "tom_st": 3.93,
+    "nota": 1.56,
+    "avisos": [
+     "palavra errada (em maio de dois mil e vinte e quatro no fim do ultimo e o ninio forte o rio grande do sul viveu a maior enchente da sua historia)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/045_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.44,
+    "cps": 17.4,
+    "tom_st": 4.35,
+    "nota": 0.6,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 46,
+  "texto": "[thoughtful] Não foi só o El Niño. Mas ele ajudou a deixar a atmosfera pronta para chuvas muito acima do normal.",
+  "escolhida": "046_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/046_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 16.7,
+    "tom_st": 3.83,
+    "nota": 0.42,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/046_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.28,
+    "cps": 17.1,
+    "tom_st": 3.56,
+    "nota": 0.52,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 47,
+  "texto": "[thoughtful] Até aqui, parece um problema só de quem mora no Sul ou no Norte. Não é.",
+  "escolhida": "047_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/047_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 16.1,
+    "tom_st": 4.67,
+    "nota": 0.29,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/047_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.36,
+    "cps": 15.5,
+    "tom_st": 3.83,
+    "nota": 0.13,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 48,
+  "texto": "[serious] Tem um efeito que chega em todo mundo, more onde morar.",
+  "escolhida": "048_v2.wav",
+  "avisos": [
+   "palavra errada (tem um efeito que chega em todo mundo morem onde morar)"
+  ],
+  "ouvir": true,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/048_v1.wav",
+    "wer": 0.182,
+    "pausa": 0.38,
+    "cps": 16.3,
+    "tom_st": 2.9,
+    "nota": 2.14,
+    "avisos": [
+     "palavra errada (tem um efeito que chega em todo mundo mora e onde morar)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/048_v2.wav",
+    "wer": 0.091,
+    "pausa": 0.26,
+    "cps": 15.9,
+    "tom_st": 3.37,
+    "nota": 1.13,
+    "avisos": [
+     "palavra errada (tem um efeito que chega em todo mundo morem onde morar)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/048_v3.wav",
+    "wer": 0.182,
+    "pausa": 0.3,
+    "cps": 15.7,
+    "tom_st": 4.67,
+    "nota": 1.98,
+    "avisos": [
+     "palavra errada (tem um efeito que chega em todo mundo mora e onde morar)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 49,
+  "texto": "[confident] A maior parte da nossa energia vem de rios represados.",
+  "escolhida": "049_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/049_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.2,
+    "tom_st": 3.6,
+    "nota": 0.31,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/049_v2.wav",
+    "wer": 0.2,
+    "pausa": 0.0,
+    "cps": 16.2,
+    "tom_st": 4.36,
+    "nota": 2.31,
+    "avisos": [
+     "palavra errada (a maior parte da nossa energia vende rios represados)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 50,
+  "texto": "[thoughtful] Quando chove pouco onde ficam as represas, o país liga mais usinas térmicas, que são mais caras.",
+  "escolhida": "050_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/050_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.2,
+    "cps": 17.1,
+    "tom_st": 3.85,
+    "nota": 0.53,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/050_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.3,
+    "cps": 16.4,
+    "tom_st": 3.81,
+    "nota": 0.36,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 51,
+  "texto": "[serious] E isso pode mudar a cor da bandeira na conta de luz.",
+  "escolhida": "051_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/051_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.6,
+    "tom_st": 2.58,
+    "nota": 0.64,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/051_v2.wav",
+    "wer": 0.083,
+    "pausa": 0.0,
+    "cps": 18.4,
+    "tom_st": 4.24,
+    "nota": 1.69,
+    "avisos": [
+     "palavra errada (isso pode mudar a cor da bandeira na conta de luz)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 52,
+  "texto": "[curious] Na comida, o efeito é misto.",
+  "escolhida": "052_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/052_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 14.5,
+    "tom_st": 5.09,
+    "nota": 0.12,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/052_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.28,
+    "cps": 14.9,
+    "tom_st": 1.72,
+    "nota": 0.51,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 53,
+  "texto": "[confident] No Sul, chuva acima da média costuma ajudar a soja e o milho, desde que ela não venha toda de uma vez.",
+  "escolhida": "053_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/053_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.3,
+    "cps": 15.8,
+    "tom_st": 4.3,
+    "nota": 0.21,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/053_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.3,
+    "cps": 16.1,
+    "tom_st": 4.59,
+    "nota": 0.27,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 54,
+  "texto": "[serious] Mas lavoura alagada na hora da colheita perde. E no Semiárido, quem sente primeiro é quem planta para comer e depende da chuva.",
+  "escolhida": "054_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/054_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.44,
+    "cps": 15.7,
+    "tom_st": 4.43,
+    "nota": 0.17,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/054_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.48,
+    "cps": 16.5,
+    "tom_st": 4.07,
+    "nota": 0.38,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 55,
+  "texto": "[thoughtful] E lá fora, o El Niño também mexe com a chuva na Ásia e na Austrália. Arroz, açúcar e trigo podem subir no mundo inteiro, e isso chega aqui.",
+  "escolhida": "055_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/055_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 15.1,
+    "tom_st": 4.21,
+    "nota": 0.04,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/055_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.52,
+    "cps": 14.7,
+    "tom_st": 3.77,
+    "nota": 0.07,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 56,
+  "texto": "[curious] E isso já aconteceu antes.",
+  "escolhida": "056_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/056_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.6,
+    "tom_st": 2.33,
+    "nota": 0.4,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/056_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 15.7,
+    "tom_st": 0.98,
+    "nota": 1.4,
+    "avisos": [
+     "tom monótono (1.0 st)"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 57,
+  "texto": "[confident] Este gráfico mostra quanto o Pacífico ficou mais quente ou mais frio que o normal, desde mil novecentos e cinquenta.",
+  "escolhida": "057_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/057_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 16.6,
+    "tom_st": 4.34,
+    "nota": 0.39,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/057_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 16.8,
+    "tom_st": 3.56,
+    "nota": 0.45,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 58,
+  "texto": "[confident] Cada pico laranja é um El Niño. Os maiores foram o de noventa e sete e o de dois mil e quinze.",
+  "escolhida": "058_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/058_v1.wav",
+    "wer": 0.045,
+    "pausa": 0.46,
+    "cps": 15.2,
+    "tom_st": 4.51,
+    "nota": 0.49,
+    "avisos": [
+     "palavra errada (cada pico laranja e um el nino os maiores foram de noventa e sete e o de dois mil e quinze)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/058_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 15.5,
+    "tom_st": 5.18,
+    "nota": 0.12,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 59,
+  "texto": "[surprised] E agora, a linha já passou do pico de noventa e sete.",
+  "escolhida": "059_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/059_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 15.3,
+    "tom_st": 4.67,
+    "nota": 0.07,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/059_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 15.5,
+    "tom_st": 3.18,
+    "nota": 0.13,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 60,
+  "texto": "[serious] Só que tem uma diferença.",
+  "escolhida": "060_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/060_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.0,
+    "tom_st": 4.85,
+    "nota": 0.25,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/060_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.5,
+    "tom_st": 6.89,
+    "nota": 0.37,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 61,
+  "texto": "[thoughtful] O último El Niño forte terminou há pouco mais de dois anos.",
+  "escolhida": "061_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/061_v1.wav",
+    "wer": 0.333,
+    "pausa": 0.0,
+    "cps": 18.2,
+    "tom_st": 3.17,
+    "nota": 4.13,
+    "avisos": [
+     "palavra errada (o ultimo e o ninio forte e terminou ha pouco mais de dois anos)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/061_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.7,
+    "tom_st": 2.02,
+    "nota": 0.85,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 62,
+  "texto": "[serious] E este chega num planeta com os oceanos mais quentes do que eram em oitenta e dois ou em noventa e sete.",
+  "escolhida": "062_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/062_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.3,
+    "tom_st": 2.71,
+    "nota": 0.56,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/062_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 18.7,
+    "tom_st": 3.07,
+    "nota": 0.92,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 63,
+  "texto": "[thoughtful] É como encher um copo que já estava quase cheio. O mesmo fenômeno agora empurra os extremos um pouco mais longe.",
+  "escolhida": "063_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/063_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.46,
+    "cps": 17.5,
+    "tom_st": 5.42,
+    "nota": 0.63,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/063_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.46,
+    "cps": 17.8,
+    "tom_st": 4.65,
+    "nota": 0.69,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 64,
+  "texto": "[curious] E o El Niño tem um irmão do contra.",
+  "escolhida": "064_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/064_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 17.2,
+    "tom_st": 3.32,
+    "nota": 0.56,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/064_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 16.5,
+    "tom_st": 5.47,
+    "nota": 0.37,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 65,
+  "texto": "[confident] Quando o vento fica mais forte que o normal, o mar perto do Peru esfria. É a La Niña.",
+  "escolhida": "065_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/065_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.42,
+    "cps": 15.6,
+    "tom_st": 3.92,
+    "nota": 0.14,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/065_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.36,
+    "cps": 15.2,
+    "tom_st": 3.72,
+    "nota": 0.04,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 66,
+  "texto": "[confident] E o Brasil se inverte: mais chuva no Norte, e seca no Sul.",
+  "escolhida": "066_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/066_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.22,
+    "cps": 13.7,
+    "tom_st": 5.31,
+    "nota": 0.33,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/066_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.26,
+    "cps": 13.8,
+    "tom_st": 4.69,
+    "nota": 0.3,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 67,
+  "texto": "[thoughtful] Por isso o Rio Grande do Sul já teve estiagem e enchente em anos seguidos. É o mesmo oceano, virando de lado.",
+  "escolhida": "067_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/067_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 16.7,
+    "tom_st": 4.59,
+    "nota": 0.42,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/067_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.34,
+    "cps": 16.9,
+    "tom_st": 3.35,
+    "nota": 0.48,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 68,
+  "texto": "[confident] E se isso já aconteceu tantas vezes, dá para se preparar.",
+  "escolhida": "068_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/068_v1.wav",
+    "wer": 0.091,
+    "pausa": 0.36,
+    "cps": 16.9,
+    "tom_st": 3.85,
+    "nota": 1.38,
+    "avisos": [
+     "palavra errada (e se isso ja aconteceu tantas vezes da pra se preparar)"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/068_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.26,
+    "cps": 16.9,
+    "tom_st": 4.54,
+    "nota": 0.47,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 69,
+  "texto": "[confident] No Sul, a chuva fica acima da média até o verão. Olhe os alertas da Defesa Civil e no rio mais perto de você.",
+  "escolhida": "069_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/069_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.42,
+    "cps": 16.2,
+    "tom_st": 3.86,
+    "nota": 0.31,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/069_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 15.3,
+    "tom_st": 4.28,
+    "nota": 0.07,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 70,
+  "texto": "[confident] No Sudeste e no Centro-Oeste, mais calor e chuva irregular. Ondas de calor ficam mais prováveis.",
+  "escolhida": "070_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/070_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.76,
+    "cps": 13.7,
+    "tom_st": 4.04,
+    "nota": 0.37,
+    "avisos": [
+     "pausa 0.8s"
+    ]
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/070_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.66,
+    "cps": 15.0,
+    "tom_st": 3.52,
+    "nota": 0.01,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 71,
+  "texto": "[confident] No Norte e no norte do Nordeste, rios baixos, falta d'água e fogo. Guarde água e não faça queimadas.",
+  "escolhida": "071_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/071_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 13.6,
+    "tom_st": 4.02,
+    "nota": 0.35,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/071_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.32,
+    "cps": 13.9,
+    "tom_st": 3.52,
+    "nota": 0.29,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 72,
+  "texto": "[serious] E em qualquer lugar, vale ter um kit de emergência pronto em casa.",
+  "escolhida": "072_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/072_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 16.2,
+    "tom_st": 4.51,
+    "nota": 0.3,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/072_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 16.8,
+    "tom_st": 5.47,
+    "nota": 0.44,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 73,
+  "texto": "[thoughtful] O El Niño deve começar a perder força no início de dois mil e vinte e sete. Até lá, os próximos meses são os mais intensos.",
+  "escolhida": "073_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/073_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.66,
+    "cps": 16.0,
+    "tom_st": 3.46,
+    "nota": 0.25,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/073_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.88,
+    "cps": 15.8,
+    "tom_st": 3.15,
+    "nota": 0.38,
+    "avisos": [
+     "pausa 0.9s"
+    ]
+   }
+  ]
+ },
+ {
+  "n": 74,
+  "texto": "[serious] Ou seja: o Brasil não tem um clima só.",
+  "escolhida": "074_v1.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/074_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.42,
+    "cps": 13.5,
+    "tom_st": 4.8,
+    "nota": 0.36,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/074_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.36,
+    "cps": 13.5,
+    "tom_st": 5.62,
+    "nota": 0.36,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 75,
+  "texto": "[thoughtful] Tem um oceano do outro lado do mundo decidindo onde chove.",
+  "escolhida": "075_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/075_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.14,
+    "cps": 16.1,
+    "tom_st": 4.98,
+    "nota": 0.27,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/075_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.0,
+    "cps": 15.7,
+    "tom_st": 3.63,
+    "nota": 0.17,
+    "avisos": []
+   }
+  ]
+ },
+ {
+  "n": 76,
+  "texto": "[serious] E, nos próximos meses, ele decidiu dividir o país ao meio.",
+  "escolhida": "076_v2.wav",
+  "avisos": [],
+  "ouvir": false,
+  "versoes": [
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/076_v1.wav",
+    "wer": 0.0,
+    "pausa": 0.24,
+    "cps": 16.1,
+    "tom_st": 3.55,
+    "nota": 0.27,
+    "avisos": []
+   },
+   {
+    "arq": "/home/user/mapalongo/elnino/audio/frases/076_v2.wav",
+    "wer": 0.0,
+    "pausa": 0.38,
+    "cps": 15.5,
+    "tom_st": 4.24,
+    "nota": 0.12,
+    "avisos": []
+   }
+  ]
+ }
+]

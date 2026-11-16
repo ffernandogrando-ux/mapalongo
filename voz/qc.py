@@ -3,10 +3,31 @@ import json, re, subprocess, sys, unicodedata, numpy as np, librosa
 from faster_whisper import WhisperModel
 from tts import tts
 M = WhisperModel("small", compute_type="int8")
+_U = "zero um dois tres quatro cinco seis sete oito nove dez onze doze treze quatorze quinze dezesseis dezessete dezoito dezenove".split()
+_D = "_ _ vinte trinta quarenta cinquenta sessenta setenta oitenta noventa".split()
+_C = "_ cento duzentos trezentos quatrocentos quinhentos seiscentos setecentos oitocentos novecentos".split()
+def extenso(n):
+    """inteiro (0..999999) por extenso em português, sem acento (para comparar com a fala)."""
+    if n < 20: return _U[n]
+    if n < 100: return _D[n // 10] + ("" if n % 10 == 0 else " e " + _U[n % 10])
+    if n == 100: return "cem"
+    if n < 1000: return _C[n // 100] + ("" if n % 100 == 0 else " e " + extenso(n % 100))
+    m, r = divmod(n, 1000)
+    s = "mil" if m == 1 else extenso(m) + " mil"
+    if r == 0: return s
+    return s + (" e " if r < 100 or r % 100 == 0 else " ") + extenso(r)
+def _num(m):
+    v = int(m.group(0)); return " " + extenso(v) + " " if v < 1000000 else m.group(0)
 def norm(s):
     s = re.sub(r"\[[^\]]*\]", " ", s)  # tags de emoção não são faladas
+    s = s.replace("%", " por cento")
+    s = re.sub(r"\d+", _num, s)        # o Whisper escreve números em algarismos
     s = unicodedata.normalize("NFD", s.lower()); s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    return re.sub(r"[^a-z0-9 ]", " ", s).split()
+    s = re.sub(r" +", " ", re.sub(r"[^a-z0-9 ]", " ", s))
+    s = re.sub(r"\bel ?(ninio|nineo|ninyo|nino|minio|ninho)\b|\belminio\b|\belninho\b", "el nino", s)  # grafias do Whisper para El Niño
+    s = re.sub(r"\bla ?(ninia|ninha|ninya)\b|\blaninha\b", "la nina", s)
+    s = s.replace(" e ", " e ").replace(" todo o mundo", " todo mundo")
+    return s.split()
 def wer(ref, hyp):
     d = np.arange(len(hyp) + 1)
     for i, r in enumerate(ref, 1):
@@ -19,7 +40,7 @@ def avalia(wav, texto):
     a, sr = librosa.load(wav, sr=16000)
     segs, _ = M.transcribe(a, language="pt", word_timestamps=True)
     ws = [w for s in segs for w in s.words]
-    hyp = [NUM.get(x, x) for x in norm(" ".join(w.word for w in ws))]
+    hyp = norm(" ".join(w.word for w in ws))
     ref = norm(texto)
     e = 0.0 if "".join(ref) == "".join(hyp) else wer(ref, hyp)  # "debaixo" = "de baixo"
     gaps = [ws[i+1].start - ws[i].end for i in range(len(ws) - 1)]
@@ -37,7 +58,8 @@ def avalia(wav, texto):
     if var < 1.5: avisos.append(f"tom monótono ({var:.1f} st)")
     if pico > 0.99: avisos.append("estouro")
     nota = e * 10 + max(0, pausa - .7) + abs(cps - 15) / 4 + max(0, 2.2 - var)
-    return dict(wer=round(e, 3), pausa=round(pausa, 2), cps=round(cps, 1), tom_st=round(var, 2), fim_st=round(fim, 2), nota=round(nota, 2), avisos=avisos, ouvido=" ".join(hyp))
+    pal = [dict(w=w.word.strip(), a=round(w.start, 3), b=round(w.end, 3)) for w in ws]
+    return dict(palavras=pal, wer=round(e, 3), pausa=round(pausa, 2), cps=round(cps, 1), tom_st=round(var, 2), fim_st=round(fim, 2), nota=round(nota, 2), avisos=avisos, ouvido=" ".join(hyp))
 if __name__ == "__main__":
     frases = [l.strip() for l in open(sys.argv[1]) if l.strip()]
     n = int(sys.argv[2]) if len(sys.argv) > 2 else 2

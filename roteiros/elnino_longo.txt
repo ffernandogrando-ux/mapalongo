@@ -1,0 +1,134 @@
+# El Niño 2026 — vídeo longo (16:9) — roteiro final (v2, com as revisões de dados e de narrativa)
+# Uma frase por linha = uma geração de voz. [tag] = emoção (não é falada). {pausa N: o que aparece} = silêncio com algo na tela.
+# "## " = capítulo. "> " = plano (não é falado).
+
+## O mesmo fenômeno, dois Brasis
+> abertura: Brasil em 3D com horizonte, Norte cor de seca e Sul cor de cheia
+[serious] O mesmo fenômeno vai deixar o Norte do Brasil sem chuva e o Sul debaixo d'água.
+[curious] E ele não acontece aqui.
+> mergulho girando até o Pacífico
+[curious] Acontece do outro lado do mundo, no meio do Oceano Pacífico.
+[serious] E agora ele está mais forte do que nunca para esta época do ano.
+[confident] Neste vídeo, você vai ver como um mar quente perto do Peru mexe com a chuva em Porto Alegre e com os rios da Amazônia.
+[thoughtful] E por que ele também pode pesar na conta de luz e no preço da comida.
+
+## O El Niño mais forte para a época
+> Pacífico de cima, a faixa de medição se desenha
+[serious] O nome dele é El Niño.
+[confident] Os meteorologistas medem a temperatura da água numa faixa do Pacífico, bem em cima da linha do Equador.
+{pausa 1.2: a caixa da região de medição se desenha no mar}
+[confident] Quando ela fica meio grau acima do normal por alguns meses seguidos, já é El Niño.
+[serious] Em outubro, ela chegou a quase dois graus e meio acima do normal.
+{pausa 1.0: o número conta até +2,5 °C}
+[surprised] É o maior valor já medido para esta época do ano.
+> Brasil, etiqueta do Inmet
+[serious] E o Inmet, o Instituto Nacional de Meteorologia, prevê que ele chegue ao auge entre novembro e janeiro, na categoria muito forte.
+
+## De onde veio o nome
+> costa do Peru em 3D, vista do mar
+[thoughtful] O nome veio de pescadores do Peru.
+[thoughtful] Todo ano, perto do Natal, o mar ali esquentava um pouco.
+[curious] Mas, em alguns anos, esquentava demais, e os peixes sumiam.
+[thoughtful] Chamaram isso de El Niño, o Menino Jesus.
+[serious] Para eles, era um ano ruim de pesca. Hoje a gente sabe que é muito mais do que isso.
+[curious] E para entender, a gente precisa olhar para o vento.
+
+## Como funciona: o vento e a água quente
+> Pacífico em 3D, ventos andando de leste para oeste
+[confident] Funciona assim.
+[confident] Num ano normal, o vento sopra sobre o Pacífico de leste para oeste.
+[confident] Sai do lado da América do Sul e vai em direção à Indonésia e à Austrália.
+{pausa 1.5: as setas do vento atravessam o oceano}
+[confident] Ele empurra a água quente da superfície para o outro lado, e ela se acumula por lá.
+[thoughtful] Perto do Peru, no lugar dela, sobe água fria das camadas mais fundas, cheia de nutrientes. É por isso que ali tem tanto peixe.
+> o vento enfraquece, a mancha quente escorre de volta
+[serious] Num ano de El Niño, esse vento enfraquece.
+[serious] E a água quente que estava presa do outro lado escorre de volta, em direção à América do Sul.
+{pausa 1.5: a mancha laranja se espalha pelo Pacífico até o Peru}
+[confident] Onde o mar é mais quente, sobe mais ar quente e úmido. E é ali que se formam as nuvens de chuva.
+[thoughtful] Então, quando a água quente muda de lugar, a chuva muda de lugar junto.
+[curious] Mas aí vem a parte estranha.
+[curious] A água quente está a mais de dez mil quilômetros daqui. Por que é o Rio Grande do Sul que alaga, e Roraima que seca?
+
+## Por que o Brasil se divide ao meio
+> perfil: o ar sobe no Pacífico e desce sobre a Amazônia
+[confident] Todo ar que sobe precisa descer em algum lugar.
+[confident] Com o El Niño, ele sobe no meio do Pacífico e desce justamente sobre a Amazônia e o norte do Nordeste.
+[serious] E ar descendo é céu limpo, sem nuvem e sem chuva.
+> Sul em 3D, a corrente de jato passando por cima
+[curious] No Sul, acontece outra coisa.
+[confident] Lá no alto, uma corrente de vento muito forte, o jato subtropical, se intensifica e segura as frentes frias em cima da região.
+{pausa 1.2: a faixa do jato passa por cima do Sul e as frentes param embaixo dela}
+[serious] A chuva fica parada, dia após dia, no mesmo lugar.
+[thoughtful] O resultado é menos chuva em cima e mais chuva embaixo. Um país dividido ao meio.
+
+## Norte e Nordeste: seca, rios baixos e fogo
+> Nordeste, a área em seca grave crescendo
+[serious] No Nordeste, a área em seca grave saltou de dezesseis para vinte e oito por cento em um mês.
+{pausa 1.0: a mancha de seca cresce no mapa}
+[serious] E quase toda a região já tem algum grau de seca.
+> Roraima, o rio Branco; Amazonas, o rio Negro
+[serious] Em Roraima, o rio Branco está muito abaixo do normal.
+[serious] E o rio Negro, no Amazonas, já atrapalha a navegação.
+[thoughtful] E rio baixo, na Amazônia, é estrada fechada: barco que não passa, comida e combustível que não chegam.
+[serious] A floresta mais seca também pega fogo com mais facilidade. Centenas de municípios, a maioria no Norte, estão em alerta para incêndio.
+
+## Sul: chuva acima da média e a lembrança de 2024
+> Rio Grande do Sul, o estado se acende em azul
+[serious] Enquanto isso, no Sul, a previsão é de chuva acima da média até o verão.
+[thoughtful] E a região conhece bem essa história.
+> satélite como prova: Guaíba e Porto Alegre
+{pausa 1.5: a imagem de satélite do Guaíba e de Porto Alegre aparece}
+[serious] Em maio de dois mil e vinte e quatro, no fim do último El Niño forte, o Rio Grande do Sul viveu a maior enchente da sua história.
+[thoughtful] Não foi só o El Niño. Mas ele ajudou a deixar a atmosfera pronta para chuvas muito acima do normal.
+[thoughtful] Até aqui, parece um problema só de quem mora no Sul ou no Norte. Não é.
+
+## O seu bolso: energia e comida
+> mapa das represas, as hidrelétricas acendendo
+[serious] Tem um efeito que chega em todo mundo, more onde morar.
+[confident] A maior parte da nossa energia vem de rios represados.
+[thoughtful] Quando chove pouco onde ficam as represas, o país liga mais usinas térmicas, que são mais caras.
+[serious] E isso pode mudar a cor da bandeira na conta de luz.
+> Sul agrícola, a lavoura
+[curious] Na comida, o efeito é misto.
+[confident] No Sul, chuva acima da média costuma ajudar a soja e o milho, desde que ela não venha toda de uma vez.
+[serious] Mas lavoura alagada na hora da colheita perde. E no Semiárido, quem sente primeiro é quem planta para comer e depende da chuva.
+> globo: Ásia e Austrália
+[thoughtful] E lá fora, o El Niño também mexe com a chuva na Ásia e na Austrália. Arroz, açúcar e trigo podem subir no mundo inteiro, e isso chega aqui.
+
+## As outras vezes
+> gráfico do índice desde 1950
+[curious] E isso já aconteceu antes.
+[confident] Este gráfico mostra quanto o Pacífico ficou mais quente ou mais frio que o normal, desde mil novecentos e cinquenta.
+{pausa 1.5: a linha do gráfico se desenha até hoje}
+[confident] Cada pico laranja é um El Niño. Os maiores foram o de noventa e sete e o de dois mil e quinze.
+[surprised] E agora, a linha já passou do pico de noventa e sete.
+
+## Por que agora é diferente
+[serious] Só que tem uma diferença.
+[thoughtful] O último El Niño forte terminou há pouco mais de dois anos.
+[serious] E este chega num planeta com os oceanos mais quentes do que eram em oitenta e dois ou em noventa e sete.
+[thoughtful] É como encher um copo que já estava quase cheio. O mesmo fenômeno agora empurra os extremos um pouco mais longe.
+
+## La Niña, o contrário
+> Pacífico, a faixa vira azul
+[curious] E o El Niño tem um irmão do contra.
+[confident] Quando o vento fica mais forte que o normal, o mar perto do Peru esfria. É a La Niña.
+{pausa 1.2: a faixa do Pacífico vira azul}
+[confident] E o Brasil se inverte: mais chuva no Norte, e seca no Sul.
+[thoughtful] Por isso o Rio Grande do Sul já teve estiagem e enchente em anos seguidos. É o mesmo oceano, virando de lado.
+
+## Se você mora em...
+> lista sobre o mapa, uma região de cada vez
+[confident] E se isso já aconteceu tantas vezes, dá para se preparar.
+[confident] No Sul, a chuva fica acima da média até o verão. Olhe os alertas da Defesa Civil e no rio mais perto de você.
+[confident] No Sudeste e no Centro-Oeste, mais calor e chuva irregular. Ondas de calor ficam mais prováveis.
+[confident] No Norte e no norte do Nordeste, rios baixos, falta d'água e fogo. Guarde água e não faça queimadas.
+[serious] E em qualquer lugar, vale ter um kit de emergência pronto em casa.
+[thoughtful] O El Niño deve começar a perder força no início de dois mil e vinte e sete. Até lá, os próximos meses são os mais intensos.
+
+## Ou seja
+> Brasil em 3D, aberto, dividido em duas cores
+[serious] Ou seja: o Brasil não tem um clima só.
+[thoughtful] Tem um oceano do outro lado do mundo decidindo onde chove.
+[serious] E, nos próximos meses, ele decidiu dividir o país ao meio.
