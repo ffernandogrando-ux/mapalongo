@@ -50,7 +50,9 @@ class Placa:
             else:
                 im = G.render_quadro(P, cam_kw, list(focos), None, linhas_estados)
                 self.img = cv2.cvtColor(np.asarray(im), cv2.COLOR_RGB2BGR).astype(np.float32) / 255
-                if cache: cv2.imwrite(cache, (self.img * 255).astype(np.uint8))
+                if cache:   # a pasta das placas não vai para o Git: sem criá-la, o imwrite falhava calado e TODA execução refazia as placas (~13 min)
+                    os.makedirs(os.path.dirname(os.path.abspath(cache)), exist_ok=True)
+                    if not cv2.imwrite(cache, (self.img * 255).astype(np.uint8)): raise IOError('placa não salva: ' + cache)
         finally:
             G.W, G.H = W, H
         self.P = P

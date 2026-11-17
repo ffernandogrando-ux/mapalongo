@@ -8,3 +8,4 @@ elnino/quadros/
 elnino/partes.txt
 elnino/audio/*.log
 __pycache__/
+*/cache_planos/
