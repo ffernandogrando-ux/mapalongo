@@ -19,40 +19,10 @@ AUDIO = os.path.join(HERE, "audio"); PL = os.path.join(HERE, "placas")
 T_ = G.TEMAS
 
 # ------------------------------------------------------------------------------------------- tempo
-LINHA = json.load(open(os.path.join(AUDIO, "linha.json"))) if os.path.exists(os.path.join(AUDIO, "linha.json")) else None
-FR = {i["n"]: i for i in LINHA["itens"] if i["tipo"] == "frase"} if LINHA else {}
-PAUSAS = [i for i in LINHA["itens"] if i["tipo"] == "pausa"] if LINHA else []
-CAPS = [i for i in LINHA["itens"] if i["tipo"] == "capitulo"] if LINHA else []
-DUR = LINHA["dur"] if LINHA else 600
-
-
-def _n(s): return "".join(c for c in unicodedata.normalize("NFD", s.lower()) if unicodedata.category(c) != "Mn" and c.isalnum())
-def S(n): return FR[n]["t"]
-def E(n): return FR[n]["fim"]
-sys.path.insert(0, os.path.join(RAIZ, "voz"))
-from qc import extenso
-def _np(w):
-    w = _n(w); return "".join(extenso(int(x)).replace(" ", "") if x.isdigit() else x for x in re.findall(r"\d+|\D+", w)) if w else w
-def T(n, w, k=0):
-    """tempo da k-ésima palavra da frase n que começa com w (junta palavras vizinhas: "de baixo" = "debaixo";
-    números em algarismos viram extenso: "16" = "dezesseis")."""
-    ps = FR[n]["palavras"]; alvo = _n(w); achou = []
-    for i in range(len(ps)):
-        cat = ""
-        for j in range(i, min(i + 4, len(ps))):
-            cat += _np(ps[j]["w"])
-            if cat.startswith(alvo) or (j == i and alvo.startswith(cat) and len(cat) >= 3 and cat == _np(ps[i]["w"]) and False):
-                achou.append(ps[i]["a"]); break
-            if not alvo.startswith(cat): break
-    achou = sorted(set(achou))
-    if len(achou) <= k:                       # grafia diferente do Whisper ("laninha"): a palavra mais parecida
-        import difflib
-        sc = [(difflib.SequenceMatcher(None, alvo, _np(p["w"])[:len(alvo) + 3]).ratio(), p["a"]) for p in ps]
-        achou = sorted(a for r, a in sc if r >= 0.6)
-    if len(achou) <= k: raise KeyError(f"'{w}' não está na frase {n}: {[p['w'] for p in ps]}")
-    return achou[k]
-def PA(i): return PAUSAS[i]["t"]          # início da i-ésima pausa do roteiro
-def CAP(i): return CAPS[i]["t"]
+import cena as C  # noqa: E402  parte comum: tempos da fala, prancha, linha de comando, render com cache por plano
+TP = C.Tempos(AUDIO)
+LINHA, FR, PAUSAS, CAPS, DUR = TP.LINHA, TP.FR, TP.PAUSAS, TP.CAPS, TP.DUR
+S, E, T, PA, CAP = TP.S, TP.E, TP.T, TP.PA, TP.CAP
 
 
 # ------------------------------------------------------------------------------------------- geografia
@@ -526,65 +496,4 @@ def montar():
 
 # ------------------------------------------------------------------------------------------- CLI
 if __name__ == "__main__":
-    cmd = sys.argv[1] if len(sys.argv) > 1 else "prancha"
-    if cmd == "checar":
-        F = montar(); print("ok", len(F.planos), "planos", round(DUR, 1), "s")
-        for p in F.planos:
-            print(f"{p.t0:7.2f} {p.t1 - p.t0:5.1f}s {p.nome}")
-            if len(sys.argv) > 2:
-                for c in p.camadas:
-                    bad = " <<< fora do plano" if c.t_in > p.t1 or c.t_in < p.t0 - 0.5 else ""
-                    print(f"          {type(c).__name__:9s} {getattr(c, 'texto', '')[:34]:34s} {c.t_in:7.2f} {min(c.t_out, 9999):7.2f}{bad}")
-    elif cmd == "som":
-        F = montar(); ev = []
-        for p, tr in zip(F.planos, F.trocas):
-            if tr == "mergulho": ev.append(dict(t=p.t0, som="whoosh"))
-            for c in p.camadas:
-                if isinstance(c, Figura) and c.t_in > 0.5: ev.append(dict(t=c.t_in, som="pop"))
-        ev.sort(key=lambda e: e["t"]); ev2 = []
-        for e in ev:                                     # nada de pops amontoados: no máximo um a cada 0,6 s
-            if e["som"] == "pop" and ev2 and e["t"] - ev2[-1]["t"] < 0.6: continue
-            ev2.append(e)
-        json.dump(ev2, open(os.path.join(AUDIO, "eventos.json"), "w"), indent=0)
-        subprocess.run([sys.executable, os.path.join(RAIZ, "som", "mix.py"), os.path.join(AUDIO, "narracao.wav"), os.path.join(AUDIO, "eventos.json"), os.path.join(AUDIO, "mix.wav")], check=True)
-        print(len(ev2), "efeitos;", os.path.join(AUDIO, "mix.wav"))
-    elif cmd == "placas":
-        todas_placas(); print("ok")
-    elif cmd == "prancha":
-        F = montar(); larg = 480; hq = int(larg * H / W); gap = 14; cols = 4
-        rows = math.ceil(len(F.planos) / cols)
-        pr = Image.new("RGB", (cols * (larg + gap) + gap, rows * (hq + 92 + gap) + 80), (14, 15, 18)); d = ImageDraw.Draw(pr)
-        d.text((gap, 40), "El Niño — vídeo longo 16:9 — prancha (um quadro por plano: tempo e frase)", font=fonte(F_X, 28), fill=(240, 240, 240), anchor="lm")
-        for k, p in enumerate(F.planos):
-            tm = min(p.t1 - 0.5, p.t0 + max(2.5, (p.t1 - p.t0) * 0.6))
-            im = Image.fromarray(cv2.cvtColor((np.clip(F.quadro(tm), 0, 1) * 255).astype(np.uint8), cv2.COLOR_BGR2RGB))
-            x = gap + (k % cols) * (larg + gap); y = 80 + (k // cols) * (hq + 92 + gap)
-            pr.paste(im.resize((larg, hq), Image.LANCZOS), (x, y))
-            fr = [i for i in FR.values() if p.t0 - 0.5 <= i["t"] < p.t1]
-            txt = fr[0]["texto"] if fr else ""; txt = re.sub(r"\[[a-z]+\] ", "", txt)
-            d.text((x, y + hq + 18), f"{int(p.t0 // 60)}:{p.t0 % 60:04.1f} · {p.nome} · {F.trocas[k]}", font=fonte(F_X, 18), fill=(255, 196, 80), anchor="lm")
-            ls, l = [], ""
-            for w_ in txt.split():
-                if fonte(F_SB, 15).getlength(l + " " + w_) > larg: ls.append(l); l = w_
-                else: l = (l + " " + w_).strip()
-            d.multiline_text((x, y + hq + 32), "\n".join((ls + [l])[:3]), font=fonte(F_SB, 15), fill=(215, 215, 215), spacing=3)
-        out = os.path.join(HERE, "prancha.jpg"); pr.save(out, quality=88); print(out, len(F.planos), "planos")
-    elif cmd == "quadro":
-        F = montar(); t = float(sys.argv[2])
-        cv2.imwrite(sys.argv[3] if len(sys.argv) > 3 else os.path.join(HERE, f"q_{t:.1f}.png"), (np.clip(F.quadro(t), 0, 1) * 255).astype(np.uint8))
-    elif cmd == "trecho":
-        F = montar(); a, b = float(sys.argv[2]), float(sys.argv[3])
-        print(F.render(os.path.join(HERE, f"trecho_{a:.0f}_{b:.0f}.mp4"), a, b, audio=os.path.join(AUDIO, "mix.wav") if os.path.exists(os.path.join(AUDIO, "mix.wav")) else os.path.join(AUDIO, "narracao.wav")))
-    elif cmd == "parte":
-        F = montar(); a, b, out = float(sys.argv[2]), float(sys.argv[3]), sys.argv[4]; F.render(out, a, b)
-    elif cmd == "render":
-        n = int(sys.argv[2]) if len(sys.argv) > 2 else 4
-        cortes = np.linspace(0, DUR, n + 1); procs, partes = [], []
-        for i in range(n):
-            out = os.path.join(HERE, f"parte_{i}.mp4"); partes.append(out)
-            procs.append(subprocess.Popen([sys.executable, "-I", __file__, "parte", f"{cortes[i]:.4f}", f"{cortes[i + 1]:.4f}", out]))
-        for p in procs: p.wait()
-        lst = os.path.join(HERE, "partes.txt"); open(lst, "w").write("".join(f"file '{p}'\n" for p in partes))
-        video = os.path.join(HERE, "video_mudo.mp4")
-        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", video])
-        print(video)
+    C.rodar(montar, __file__, titulo="El Niño — vídeo longo 16:9", placas=todas_placas, tempos=TP)

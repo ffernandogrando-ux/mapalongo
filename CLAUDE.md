@@ -41,3 +41,8 @@ Antes de qualquer roteiro, leia `docs/PROPOSTA_FORMATO_LONGO.md`. Responda ao us
   - dados conferidos na web;
   - créditos na descrição;
   - arquivo de imagens de IA (`roteiros/<video>_imagens.txt`).
+
+## Produção eficiente (16/11/2026)
+- **Parte comum em `motor/cena.py`:** tempos da fala (`Tempos`: `S`, `E`, `T`, `PA`, `CAP`), prancha, linha de comando e render. A cena de um vídeo novo tem só a geografia, as placas, os componentes do tema e `montar()`, e termina com `C.rodar(montar, __file__, titulo=..., placas=...)`. Modelo: começo e fim de `elnino/scene_elnino.py`. **Não copie** a parte comum para a cena; componente que servir para outro vídeo (gráfico, lista, cartela) vai para `motor/`.
+- **Render com cache por plano:** `python3 -I <cena> render 4` guarda cada plano em `<video>/cache_planos/` com uma impressão digital. Corrigiu um plano? Rode `render` de novo: só esse plano (e o seguinte, se a troca usa o anterior) é refeito, e tudo é juntado sem recomprimir. Antes, o vídeo inteiro era refeito.
+- **Placas guardadas:** as placas ficam em `<video>/placas/` (fora do Git) e são feitas uma vez só por sessão (~13 min no El Niño). Até 16/11 a pasta não era criada e toda execução refazia as placas.
